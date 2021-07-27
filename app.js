@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
@@ -5,6 +7,7 @@ const logger = require("morgan");
 
 const indexRouter = require("./routes/index");
 const mockDataRouter = require("./routes/mock");
+const tripRawRouter = require("./routes/tripRaw");
 
 const app = express();
 
@@ -16,5 +19,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
+app.use("/tripraw", tripRawRouter);
 
 module.exports = app;
