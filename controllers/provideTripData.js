@@ -1,5 +1,9 @@
 const provideTripData = (req, res, next) => {
-  const { tripData } = req;
+  const { durations, timeSlots } = req;
+  const tripData = {
+    durations: durations,
+    timeSlots: timeSlots,
+  };
   res.send(tripData);
 };
 

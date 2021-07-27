@@ -6,6 +6,7 @@
   "destination": "Berlin",
   "createdAt": "2021-07-19T20:25:57.534Z",
   "accommodation": "Spandauer Alle 123, 0134 Berlin",
+  "accomodationCoords": { "lat": 52.5039563, "lng": 13.3981579 },
   "transportation": { "walking": true, "public": true },
   "trip": [
     {
