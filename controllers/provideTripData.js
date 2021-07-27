@@ -1,6 +1,7 @@
 const provideTripData = (req, res, next) => {
-  const { durations, timeSlots } = req;
+  const { durations, timeSlots, trip } = req;
   const tripData = {
+    trip: trip,
     durations: durations,
     timeSlots: timeSlots,
   };

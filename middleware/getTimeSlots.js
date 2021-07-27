@@ -1,6 +1,9 @@
 const dayjs = require("dayjs");
 const isSameOrBefore = require("dayjs/plugin/isSameOrBefore");
+const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
+
 dayjs.extend(isSameOrBefore);
+dayjs.extend(isSameOrAfter);
 
 const getTimeSlots = (req, res, next) => {
   const { tripStarts, tripEnds } = req.body;
@@ -29,7 +32,7 @@ const getTimeSlots = (req, res, next) => {
     },
   ];
 
-  // 1st iter
+  // spread trip calendar days in array where one index = one trip day
   let date = tripStartsYMD;
   let tripDays = [];
 
@@ -63,7 +66,7 @@ const getTimeSlots = (req, res, next) => {
     date = dayjs(date).add(1, "day");
   }
 
-  const timeSlots = tripDays.reduce((acc, curr) => {
+  const timeSlotsByDay = tripDays.reduce((acc, curr, index) => {
     const slots = slotsTemplate.map((slot) => {
       // convert each slot template time to actual datetime of current trip date in order to use date mnethods
       let slotStartsDate = dayjs(curr.date)
@@ -75,8 +78,8 @@ const getTimeSlots = (req, res, next) => {
 
       // for full days
       if (
-        slotStartsDate.isAfter(curr.dayStarts) &&
-        slotEndsDate.isBefore(curr.dayEnds)
+        slotStartsDate.isSameOrAfter(curr.dayStarts) &&
+        slotEndsDate.isSameOrBefore(curr.dayEnds)
       ) {
         const slotFinal = {
           period: slot.period,
@@ -89,8 +92,8 @@ const getTimeSlots = (req, res, next) => {
 
       // for days when trip start is after slot start, e.g. arrival days
       if (
-        slotStartsDate.isBefore(curr.dayStarts) &&
-        slotEndsDate.isAfter(curr.dayStarts)
+        slotStartsDate.isSameOrBefore(curr.dayStarts) &&
+        slotEndsDate.isSameOrAfter(curr.dayStarts)
       ) {
         const slotFinal = {
           period: slot.period,
@@ -103,8 +106,8 @@ const getTimeSlots = (req, res, next) => {
 
       // for days when trip ends is before slot ends, e.g. departute days
       if (
-        slotStartsDate.isBefore(curr.dayEnds) &&
-        slotEndsDate.isAfter(curr.dayEnds)
+        slotStartsDate.isSameOrBefore(curr.dayEnds) &&
+        slotEndsDate.isSameOrAfter(curr.dayEnds)
       ) {
         const slotFinal = {
           period: slot.period,
@@ -115,10 +118,17 @@ const getTimeSlots = (req, res, next) => {
         return slotFinal;
       }
     });
-    return (acc = [...acc, ...slots]);
+
+    const dayWithSlots = {
+      dayIndex: index,
+      date: curr.date,
+      slots: slots,
+    };
+
+    return (acc = [...acc, dayWithSlots]);
   }, []);
 
-  req.timeSlots = timeSlots;
+  req.timeSlotsByDay = timeSlotsByDay.filter((day) => day !== undefined);
   next();
 };
 

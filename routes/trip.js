@@ -9,6 +9,7 @@ const { provideTripData } = require("../controllers/provideTripData");
 const getPlaces = require("../middleware/getPlaces");
 const getDurations = require("../middleware/getDurations");
 const getTimeSlots = require("../middleware/getTimeSlots");
+const getOptimizedTrip = require("../middleware/getOptimizedTrip");
 
 // Initial request with destination, dates etc
 router.post(
@@ -26,7 +27,7 @@ router.put(
   validateTripRequest,
   getDurations,
   getTimeSlots,
-  // getOptimizedTrip,
+  getOptimizedTrip,
   provideTripData
 );
 
