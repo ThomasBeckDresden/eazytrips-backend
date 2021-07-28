@@ -10,7 +10,7 @@ const addLocationsToSlot = require("../utils/addLocationsToSlot");
 
 const getOptimizedTrip = (req, res, next) => {
   const { durations, timeSlotsByDay } = req;
-  const { rawDataPlaces } = req.body;
+  const { rawDataPlaces, userLocations } = req.body;
 
   const trip = timeSlotsByDay.reduce(
     (acc, curr) => {
@@ -30,7 +30,8 @@ const getOptimizedTrip = (req, res, next) => {
           slotTime,
           durations,
           slot,
-          acc.locationsVisited
+          acc.locationsVisited,
+          userLocations
         );
 
         // keep track locations already visited during trip

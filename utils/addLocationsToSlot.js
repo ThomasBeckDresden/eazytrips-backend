@@ -1,7 +1,7 @@
 const dayjs = require("dayjs");
 
 /////////////////////////////////////////////////////////
-//Helper function: Recursively add new locations to slot
+//Recursively add new locations to slot
 ///////////////////////////////////////////////////////////
 
 function addLocationsToSlot(
@@ -11,6 +11,7 @@ function addLocationsToSlot(
   durations,
   slotMetaInfo,
   locationsVisited,
+  userLocations,
   durationToPrevious = 0,
   sightTime = 0,
   totalSightsTime = 0,
@@ -41,6 +42,10 @@ function addLocationsToSlot(
     return 0;
   });
 
+  let durationsListRankedUser = durationsListRanked.filter((sight) =>
+    userLocations.includes(sight.destination)
+  );
+
   // console.log(
   //   "###############################################################"
   // );
@@ -52,52 +57,62 @@ function addLocationsToSlot(
   //     locations in Slot are ${locationsInSlot}
   //     locationsVisited are ${locationsVisited}`);
 
-  // FOR EACH sight in durationsList:
-  for (const nextSight of durationsListRanked) {
-    const nextSightId = nextSight.destination;
-    // console.log(`nextSight in for each is ${nextSightId}`);
+  // FOR EACH sight in durationsList that IS user defined:
+  iterateOverLocations(durationsListRankedUser);
 
-    // Check if potential next sight has not been visited yet and is not equal to current sight
-    if (
-      !locationsVisited.includes(nextSightId) &&
-      nextSightId !== currentSightId
-    ) {
-      // Calculate travel time to next site
-      durationToNext = durationsListRanked.find(
-        (entry) => entry.destination === nextSightId
-      ).duration;
+  // FOR EACH sight in durationsList that IS NOT user defined:
+  iterateOverLocations(durationsListRanked);
 
-      // calculate total time for sights in slot -> MUST INCLUDE ALSO VISIT TIME
-      // in final version
-      let sightTime = 4500;
-      totalSightsTime = totalSightsTime + sightTime + durationToNext;
+  // HELPER FUNCTION: iterate over locations
+  function iterateOverLocations(durationsListRanked) {
+    for (const nextSight of durationsListRanked) {
+      const nextSightId = nextSight.destination;
+      // console.log(`nextSight in for each is ${nextSightId}`);
 
-      // if still time left in slot:
-      if (totalSightsTime < slotTime) {
-        const arrivalTimeNext = departureTime.add(durationToNext, "seconds");
-        const departureTimeNext = departureTime.add(
-          durationToNext + sightTime,
-          "seconds"
-        );
+      // Check if potential next sight has not been visited yet and is not equal to current sight
+      if (
+        !locationsVisited.includes(nextSightId) &&
+        nextSightId !== currentSightId
+      ) {
+        // Calculate travel time to next site
+        durationToNext = durationsListRanked.find(
+          (entry) => entry.destination === nextSightId
+        ).duration;
 
-        return addLocationsToSlot(
-          arrivalTimeNext,
-          departureTimeNext,
-          slotTime,
-          durations,
-          slotMetaInfo,
-          locationsVisited,
-          durationToNext,
-          sightTime,
-          totalSightsTime,
-          nextSightId,
-          locationsInSlot
-        );
+        // calculate total time for sights in slot -> MUST INCLUDE ALSO VISIT TIME
+        // in final version
+        let sightTime = 4500;
+        totalSightsTime = totalSightsTime + sightTime + durationToNext;
+
+        // if still time left in slot:
+        if (totalSightsTime < slotTime) {
+          const arrivalTimeNext = departureTime.add(durationToNext, "seconds");
+          const departureTimeNext = departureTime.add(
+            durationToNext + sightTime,
+            "seconds"
+          );
+
+          return addLocationsToSlot(
+            arrivalTimeNext,
+            departureTimeNext,
+            slotTime,
+            durations,
+            slotMetaInfo,
+            locationsVisited,
+            userLocations,
+            durationToNext,
+            sightTime,
+            totalSightsTime,
+            nextSightId,
+            locationsInSlot
+          );
+        }
+
+        // if visit time for next sight exceeds slot time, go to nth - closest sight and repeat all steps
       }
-
-      // if visit time for next sight exceeds slot time, go to nth - closest sight and repeat all steps
     }
   }
+
   return { locationsInSlot, locationsVisited };
 }
 

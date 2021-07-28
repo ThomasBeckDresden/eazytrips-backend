@@ -15,6 +15,7 @@ const provideTripDataFinal = (req, res, next) => {
     accommodationCoords,
     transportation,
     rawDataPlaces,
+    userLocations,
   } = req.body;
 
   const { durations, timeSlots, trip } = req;
@@ -29,6 +30,7 @@ const provideTripDataFinal = (req, res, next) => {
     accommodation,
     accommodationCoords,
     transportation,
+    userLocations,
     trip,
     rawDataPlaces,
     durations,
