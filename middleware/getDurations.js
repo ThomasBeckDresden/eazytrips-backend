@@ -42,7 +42,7 @@ const getDurations = async (req, res, next) => {
       { headers }
     );
 
-    // restructure durations matrix to include names of places
+    // restructure fetched durations matrix to include names of places
     const durations = durationsRaw.durations.map((place, index) => {
       return {
         source: locationsFinal[index].place_id,

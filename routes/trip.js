@@ -5,7 +5,10 @@ const {
   validatorsUpdatedRequest,
   validateTripRequest,
 } = require("../middleware/validateTripRequest");
-const { provideTripData } = require("../controllers/provideTripData");
+const {
+  provideTripDataRaw,
+  provideTripDataFinal,
+} = require("../controllers/provideTripData");
 const getPlaces = require("../middleware/getPlaces");
 const getDurations = require("../middleware/getDurations");
 const getTimeSlots = require("../middleware/getTimeSlots");
@@ -17,7 +20,7 @@ router.post(
   validatorsInitialRequest,
   validateTripRequest,
   getPlaces,
-  provideTripData
+  provideTripDataRaw
 );
 
 // Updated request containing updated trip data
@@ -28,7 +31,7 @@ router.put(
   getDurations,
   getTimeSlots,
   getOptimizedTrip,
-  provideTripData
+  provideTripDataFinal
 );
 
 module.exports = router;
