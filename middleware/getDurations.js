@@ -8,16 +8,28 @@ const getDurations = async (req, res, next) => {
   const { rawDataPlaces, accommodationCoords } = req.body;
   const apiOpenRoutes = process.env.API_KEY_OPENROUTES;
 
+  // build final list for duration matrix containing id and coords of candidate locations
+  const rawDataPlacesFormat = rawDataPlaces.map((place) => {
+    return {
+      place_id: place.place_id,
+      coords: [place.geometry.location.lng, place.geometry.location.lat],
+    };
+  });
+
+  const accommodationFormat = {
+    place_id: "accommodation",
+    coords: [accommodationCoords.lng, accommodationCoords.lat],
+  };
+
+  const locationsFinal = [accommodationFormat, ...rawDataPlacesFormat];
+
   try {
-    // get coords of places in list
-    const body = rawDataPlaces.map((place) => {
-      return [place.geometry.location.lng, place.geometry.location.lat];
+    // fetch durations matrix for places
+    // extract coords
+    const locationsCoords = locationsFinal.map((location) => {
+      return location.coords;
     });
 
-    // add accomodation as first item
-    body.unshift([accommodationCoords.lng, accommodationCoords.lat]);
-
-    // fetch durations matrix for places
     const headers = {
       Authorization: apiOpenRoutes,
     };
@@ -26,19 +38,17 @@ const getDurations = async (req, res, next) => {
 
     const { data: durationsRaw } = await axios.post(
       `${endpoint}${param}`,
-      { locations: body },
+      { locations: locationsCoords },
       { headers }
     );
 
     // restructure durations matrix to include names of places
-    const durations = durationsRaw.durations.map((location, index) => {
+    const durations = durationsRaw.durations.map((place, index) => {
       return {
-        source:
-          index === 0 ? "accommodation" : rawDataPlaces[index - 1].place_id,
-        durations: location.map((duration, index) => {
+        source: locationsFinal[index].place_id,
+        durations: place.map((duration, index) => {
           return {
-            destination:
-              index === 0 ? "accommodation" : rawDataPlaces[index - 1].place_id,
+            destination: locationsFinal[index].place_id,
             duration,
           };
         }),

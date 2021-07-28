@@ -41,21 +41,21 @@ function addLocationsToSlot(
     return 0;
   });
 
-  console.log(
-    "###############################################################"
-  );
-  console.log(durationsListRanked);
+  // console.log(
+  //   "###############################################################"
+  // );
+  // console.log(durationsListRanked);
 
-  console.log(`starting point is location nr ${currentSightId} 
-      durations list ranked is ${durationsListRanked}
-      totalSightTime is ${totalSightsTime}
-      locations in Slot are ${locationsInSlot}
-      locationsVisited are ${locationsVisited}`);
+  // console.log(`starting point is location nr ${currentSightId}
+  //     durations list ranked is ${durationsListRanked}
+  //     totalSightTime is ${totalSightsTime}
+  //     locations in Slot are ${locationsInSlot}
+  //     locationsVisited are ${locationsVisited}`);
 
   // FOR EACH sight in durationsList:
   for (const nextSight of durationsListRanked) {
     const nextSightId = nextSight.destination;
-    console.log(`nextSight in for each is ${nextSightId}`);
+    // console.log(`nextSight in for each is ${nextSightId}`);
 
     // Check if potential next sight has not been visited yet and is not equal to current sight
     if (

@@ -125,7 +125,7 @@ const getTimeSlots = (req, res, next) => {
       slots: slots,
     };
 
-    return (acc = [...acc, dayWithSlots]);
+    return [...acc, dayWithSlots];
   }, []);
 
   req.timeSlotsByDay = timeSlotsByDay.filter((day) => day !== undefined);
