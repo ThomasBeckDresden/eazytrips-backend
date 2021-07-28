@@ -1,59 +1,7 @@
 const dayjs = require("dayjs");
 
-/////////////////////////////////////////////////////////
-//Helper function: Recursively add new locations to slot
-///////////////////////////////////////////////////////////
-
-function addLocationsToSlot(
-  arrivalTime,
-  departureTime,
-  slotTime,
-  durations,
-  slotMetaInfo,
-  locationsVisited,
-  durationToPrevious = 0,
-  sightTime = 0,
-  totalSightsTime = 0,
-  currentSightId = "accommodation",
-  locationsInSlot = []
-) {
-  // add current sight to slot if travel time to destination + visit time
-  // below slot time (NOT IMPLEMENTED)
-  if (!locationsVisited.includes(currentSightId)) {
-    locationsInSlot.push({
-      period: slotMetaInfo.period,
-      arrivalTime: arrivalTime,
-      departureTime: departureTime,
-      travelTo: durationToPrevious,
-      place_id: currentSightId,
-    });
-    locationsVisited.push(currentSightId);
-  }
-
-  // Calculate durationsListRanked to all other sites ranked by durations;
-  let durationsListRanked = durations.find(
-    (durationList) => durationList.source === currentSightId
-  ).durations;
-
-  durationsListRanked.sort((a, b) => {
-    if (a.duration < b.duration) return -1;
-    if (a.duration > b.duration) return 1;
-    return 0;
-  });
-
-  // console.log(
-  //   "###############################################################"
-  // );
-  // console.log(durationsListRanked);
-
-  // console.log(`starting point is location nr ${currentSightId}
-  //     durations list ranked is ${durationsListRanked}
-  //     totalSightTime is ${totalSightsTime}
-  //     locations in Slot are ${locationsInSlot}
-  //     locationsVisited are ${locationsVisited}`);
-
-  // FOR EACH sight in durationsList:
-  for (const nextSight of durationsListRanked) {
+function iterateOverLocations(durationsList) {
+  for (const nextSight of durationsListRankedUser) {
     const nextSightId = nextSight.destination;
     // console.log(`nextSight in for each is ${nextSightId}`);
 
@@ -87,6 +35,7 @@ function addLocationsToSlot(
           durations,
           slotMetaInfo,
           locationsVisited,
+          userLocations,
           durationToNext,
           sightTime,
           totalSightsTime,
@@ -98,6 +47,71 @@ function addLocationsToSlot(
       // if visit time for next sight exceeds slot time, go to nth - closest sight and repeat all steps
     }
   }
+}
+
+/////////////////////////////////////////////////////////
+//Recursively add new locations to slot
+///////////////////////////////////////////////////////////
+
+function addLocationsToSlot(
+  arrivalTime,
+  departureTime,
+  slotTime,
+  durations,
+  slotMetaInfo,
+  locationsVisited,
+  userLocations,
+  durationToPrevious = 0,
+  sightTime = 0,
+  totalSightsTime = 0,
+  currentSightId = "accommodation",
+  locationsInSlot = []
+) {
+  // add current sight to slot if travel time to destination + visit time
+  // below slot time (NOT IMPLEMENTED)
+  if (!locationsVisited.includes(currentSightId)) {
+    locationsInSlot.push({
+      period: slotMetaInfo.period,
+      arrivalTime: arrivalTime,
+      departureTime: departureTime,
+      travelTo: durationToPrevious,
+      place_id: currentSightId,
+    });
+    locationsVisited.push(currentSightId);
+  }
+
+  // Calculate durationsListRanked to all other sites ranked by durations;
+  let durationsListRanked = durations.find(
+    (durationList) => durationList.source === currentSightId
+  ).durations;
+
+  durationsListRanked.sort((a, b) => {
+    if (a.duration < b.duration) return -1;
+    if (a.duration > b.duration) return 1;
+    return 0;
+  });
+
+  let durationListRankedUser = durationsListRanked.filter((sight) =>
+    userLocations.includes(sight.destination)
+  );
+
+  // console.log(
+  //   "###############################################################"
+  // );
+  // console.log(durationsListRanked);
+
+  // console.log(`starting point is location nr ${currentSightId}
+  //     durations list ranked is ${durationsListRanked}
+  //     totalSightTime is ${totalSightsTime}
+  //     locations in Slot are ${locationsInSlot}
+  //     locationsVisited are ${locationsVisited}`);
+
+  // FOR EACH sight in durationsList that IS user defined:
+  iterateOverLocations(durationListRankedUser);
+
+  // FOR EACH sight in durationsList that IS NOT user defined:
+  iterateOverLocations(durationListRanked);
+
   return { locationsInSlot, locationsVisited };
 }
 
