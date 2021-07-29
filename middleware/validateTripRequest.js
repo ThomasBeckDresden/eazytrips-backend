@@ -1,7 +1,7 @@
 const { check, validationResult } = require("express-validator");
 
 const validatorsInitialRequest = [
-  check("destination").notEmpty().isAlpha(),
+  check("destination").notEmpty(),
   check("tripStarts").notEmpty().isISO8601(),
   check("tripEnds").notEmpty().isISO8601(),
 ];

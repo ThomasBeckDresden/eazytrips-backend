@@ -83,6 +83,9 @@ function addLocationsToSlot(
         let sightTime = 4500;
         totalSightsTime = totalSightsTime + sightTime + durationToNext;
 
+        // Check if user location fits equally or better
+        // const totalSightsTimeUserLocation
+
         // if still time left in slot:
         if (totalSightsTime < slotTime) {
           const arrivalTimeNext = departureTime.add(durationToNext, "seconds");

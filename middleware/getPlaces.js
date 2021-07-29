@@ -1,6 +1,7 @@
 const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
 const dayjs = require("dayjs");
+const Diacritics = require("diacritic");
 
 const getPlaces = async (req, res, next) => {
   const {
@@ -28,9 +29,11 @@ const getPlaces = async (req, res, next) => {
 
     if (!accommodation) {
       // set accommodation adress to destination
-      accommodationAddress = destination;
-
-      // build proper query string
+      const regex = /\W+/g;
+      accommodationAddress = Diacritics.clean(destination)
+        .toLowerCase()
+        .trim()
+        .replace(regex, "%20");
 
       // get coords of accommodation = destination coords, accommodation adress = destination address
       const { data: dataGeocode } = await axios(
@@ -48,7 +51,11 @@ const getPlaces = async (req, res, next) => {
       dataPlaces = data;
     } else {
       // if accommodation is provided: get coords for accommodation and destination
-      accommodationAddress = accommodation;
+      const regex = /\W+/g;
+      accommodationAddress = Diacritics.clean(accommodation)
+        .toLowerCase()
+        .trim()
+        .replace(regex, "%20");
 
       // get coords of accommodation + address
       const { data: dataGeocodeAccommodation } = await axios(
@@ -60,6 +67,11 @@ const getPlaces = async (req, res, next) => {
         dataGeocodeAccommodation.results[0].formatted_address;
 
       // get destination coords + adress
+      accommodationAddress = Diacritics.clean(destination)
+        .toLowerCase()
+        .trim()
+        .replace(regex, "%20");
+
       const { data: dataGeocodeDestination } = await axios(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${destination}&key=${apiGoogle}`
       );
