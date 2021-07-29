@@ -57,7 +57,7 @@ const getOptimizedTrip = (req, res, next) => {
       );
 
       const tripDay = {
-        dayIndex: curr.dayIndex,
+        dayIndex: curr.dayIndex + 1,
         date: curr.date,
         locations: locationsByDay[0],
         highlight: highlightDay,

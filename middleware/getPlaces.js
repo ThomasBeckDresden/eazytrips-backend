@@ -19,37 +19,71 @@ const getPlaces = async (req, res, next) => {
   // else use city center of destination: MVP, ONLY THIS
 
   try {
-    // get geocoded adress
-    const homeAdress = accommodation ? accommodation : destination;
-    const { data: dataGeocode } = await axios(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${homeAdress}&key=${apiGoogle}`
-    );
-    const coords = dataGeocode.results[0].geometry.location;
-    console.log(coords);
-
-    // // get nearby places:
-    // //  use geocoded adress to query googleplaces within X radius
-    // // calculate radius according to preferred means of transport
+    let dataPlaces;
+    let destinationCoords;
+    let destinationAddress;
+    let accommodationAddress;
+    let accommodationCoords;
     const radius = transportation.public ? 10000 : 5000;
-    console.log(radius);
-    // MVP = 5km
 
-    const { data: dataPlaces } = await axios(
-      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${coords.lat}, ${coords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
-    );
+    if (!accommodation) {
+      // set accommodation adress to destination
+      accommodationAddress = destination;
+
+      // build proper query string
+
+      // get coords of accommodation = destination coords, accommodation adress = destination address
+      const { data: dataGeocode } = await axios(
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
+      );
+      accommodationCoords = dataGeocode.results[0].geometry.location;
+      accommodationAddress = dataGeocode.results[0].formatted_address;
+      destinationCoords = dataGeocode.results[0].geometry.location;
+      destinationAddress = dataGeocode.results[0].formatted_address;
+
+      // get places for destination with coords = accommodation coords
+      const { data } = await axios(
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${destinationCoords.lat}, ${destinationCoords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
+      );
+      dataPlaces = data;
+    } else {
+      // if accommodation is provided: get coords for accommodation and destination
+      accommodationAddress = accommodation;
+
+      // get coords of accommodation + address
+      const { data: dataGeocodeAccommodation } = await axios(
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
+      );
+      accommodationCoords =
+        dataGeocodeAccommodation.results[0].geometry.location;
+      accommodationAddress =
+        dataGeocodeAccommodation.results[0].formatted_address;
+
+      // get destination coords + adress
+      const { data: dataGeocodeDestination } = await axios(
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
+      );
+      destinationCoords = dataGeocodeDestination.results[0].geometry.location;
+      destinationAddress = dataGeocodeDestination.results[0].formatted_address;
+
+      // get nearby places
+      const { data } = await axios(
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${destinationCoords.lat}, ${destinationCoords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
+      );
+      dataPlaces = data;
+    }
 
     console.log(dataPlaces);
-
     // create final data structure
     const tripDataRaw = {
       tripId: uuidv4(),
       tripName: tripName,
       tripStarts: tripStarts,
       tripEnds: tripEnds,
-      destination: destination,
+      destination: destinationAddress,
       createdAt: dayjs(),
-      accommodation: accommodation,
-      accommodationCoords: coords,
+      accommodation: accommodationAddress,
+      accommodationCoords: accommodationCoords,
       transportation: transportation,
       rawDataPlaces: dataPlaces.results,
     };

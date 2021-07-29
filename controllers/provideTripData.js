@@ -37,7 +37,14 @@ const provideTripDataFinal = (req, res, next) => {
   //   durations,
   //   timeSlots,
   // };
-  res.json(tripData);
+
+  const tripDataNoAccomm = tripData.trip.forEach((day) => {
+    const locationNoAccomm = day.locations.filter(
+      (location) => location.place_id !== "accommodation"
+    );
+  });
+
+  res.json(tripDataNoAccomm);
 };
 
 module.exports = { provideTripDataFinal, provideTripDataRaw };
