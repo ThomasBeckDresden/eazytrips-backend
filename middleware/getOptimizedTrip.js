@@ -16,7 +16,7 @@ const getOptimizedTrip = (req, res, next) => {
     (acc, curr) => {
       // for each day, map over slots in day to get final list of locations to visit on that day
 
-      const locations = curr.slots.map((slot) => {
+      const locationsByDay = curr.slots.map((slot) => {
         const slotTime = slot.slotEnds.diff(slot.slotStarts, "second");
         // console.log("mapping over", slot.date);
         // console.log("acc.locationsVisited is", acc.locationsVisited);
@@ -41,10 +41,26 @@ const getOptimizedTrip = (req, res, next) => {
       });
 
       // build final object containing complete itinerary for SINGLE trip day
+      // get highlights:
+      // find the sight with the hightest user ranking in raw data places
+      const highlightDay = locationsByDay[0].reduce(
+        (acc, curr) => {
+          const { rating } = rawDataPlaces.find(
+            (place) => place.place_id === curr.place_id
+          ) || { rating: 0 };
+
+          return rating > acc.rating
+            ? { rating: rating, place_id: curr.place_id }
+            : { ...acc };
+        },
+        { rating: 0 }
+      );
+
       const tripDay = {
         dayIndex: curr.dayIndex,
         date: curr.date,
-        locations: locations,
+        locations: locationsByDay[0],
+        highlight: highlightDay,
       };
 
       // filter out from visited locations accommodation since it should be used again on next day as starting point
