@@ -38,10 +38,11 @@ const provideTripDataFinal = (req, res, next) => {
   //   timeSlots,
   // };
 
-  const tripDataNoAccomm = tripData.trip.forEach((day) => {
+  const tripDataNoAccomm = tripData.trip.map((day) => {
     const locationNoAccomm = day.locations.filter(
       (location) => location.place_id !== "accommodation"
     );
+    return { ...day, locations: locationNoAccomm };
   });
 
   res.json(tripDataNoAccomm);
