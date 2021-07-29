@@ -9,6 +9,7 @@ const cors = require("cors");
 const indexRouter = require("./routes/index");
 const mockDataRouter = require("./routes/mock");
 const tripRouter = require("./routes/trip");
+const loadMockData = require("./utils/loadMockData");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
+app.use(loadMockData);
 
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
