@@ -59,10 +59,13 @@ const getTimeSlotsByDay = (tripDays, slotsTemplate) => {
       }
     });
 
+    // remove undefined slots
+    const slotsFiltered = slots.filter((slot) => slot !== undefined);
+
     const dayWithSlots = {
       dayIndex: index,
       date: curr.date,
-      slots: slots,
+      slots: slotsFiltered,
     };
 
     return [...acc, dayWithSlots];
