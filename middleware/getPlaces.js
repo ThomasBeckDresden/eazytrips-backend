@@ -9,7 +9,7 @@ const getPlaces = async (req, res, next) => {
     tripStarts,
     tripEnds,
     accommodation,
-    transportion,
+    transportation,
   } = req.body;
   const apiGoogle = process.env.API_KEY_GOOGLE;
 
@@ -30,7 +30,7 @@ const getPlaces = async (req, res, next) => {
     // // get nearby places:
     // //  use geocoded adress to query googleplaces within X radius
     // // calculate radius according to preferred means of transport
-    const radius = transportion.public ? 10000 : 5000;
+    const radius = transportation.public ? 10000 : 5000;
     console.log(radius);
     // MVP = 5km
 
@@ -50,7 +50,7 @@ const getPlaces = async (req, res, next) => {
       createdAt: dayjs(),
       accommodation: accommodation,
       accommodationCoords: coords,
-      transportation: transportion,
+      transportation: transportation,
       rawDataPlaces: dataPlaces.results,
     };
 
