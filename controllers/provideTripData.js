@@ -38,14 +38,17 @@ const provideTripDataFinal = (req, res, next) => {
   //   timeSlots,
   // };
 
-  const tripDataNoAccomm = tripData.trip.map((day) => {
-    const locationNoAccomm = day.locations.filter(
-      (location) => location.place_id !== "accommodation"
-    );
-    return { ...day, locations: locationNoAccomm };
-  });
+  // KEEP IN FINAL VERSION
+  // const tripDataNoAccomm = tripData.trip.map((day) => {
+  //   const locationNoAccomm = day.locations.filter(
+  //     (location) => location.place_id !== "accommodation"
+  //   );
+  //   return { ...day, locations: locationNoAccomm };
+  // });
 
-  res.json({ ...tripData, trip: tripDataNoAccomm });
+  // res.json({ ...tripData, trip: tripDataNoAccomm });
+
+  res.json(tripData);
 };
 
 module.exports = { provideTripDataFinal, provideTripDataRaw };
