@@ -6,4 +6,4 @@ const loadMockData = (req, res, next) => {
   next();
 };
 
-module.exports = loadPokemonData;
+module.exports = loadMockData;
