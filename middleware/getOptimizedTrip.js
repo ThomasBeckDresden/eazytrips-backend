@@ -15,9 +15,9 @@ const getOptimizedTrip = (req, res, next) => {
   const trip = timeSlotsByDay.reduce(
     (acc, curr) => {
       // for each day, map over slots in day to get final list of locations to visit on that day
-
-      const locationsByDay = curr.slots.map((slot) => {
-        const slotTime = slot.slotEnds.diff(slot.slotStarts, "second");
+      console.log(curr.slots);
+      const locationsByDay = curr.slots.reduce((accLocations, currSlot) => {
+        const slotTime = currSlot.slotEnds.diff(currSlot.slotStarts, "second");
         // console.log("mapping over", slot.date);
         // console.log("acc.locationsVisited is", acc.locationsVisited);
         // console.log("slot Time is", slotTime);
@@ -25,11 +25,11 @@ const getOptimizedTrip = (req, res, next) => {
 
         // initialize function with accommodation address of user, arrival time=departure time
         const locations = addLocationsToSlot(
-          slot.slotStarts,
-          slot.slotStarts,
+          currSlot.slotStarts,
+          currSlot.slotStarts,
           slotTime,
           durations,
-          slot,
+          currSlot,
           acc.locationsVisited,
           userLocations
         );
@@ -37,13 +37,13 @@ const getOptimizedTrip = (req, res, next) => {
         // keep track locations already visited during trip
         acc.locationsVisited = [...locations.locationsVisited];
 
-        return locations.locationsInSlot;
-      });
+        return [...accLocations, ...locations.locationsInSlot];
+      }, []);
 
       // build final object containing complete itinerary for SINGLE trip day
       // get highlights:
       // find the sight with the hightest user ranking in raw data places
-      const highlightDay = locationsByDay[0].reduce(
+      const highlightDay = locationsByDay.reduce(
         (acc, curr) => {
           const { rating } = rawDataPlaces.find(
             (place) => place.place_id === curr.place_id
@@ -59,7 +59,7 @@ const getOptimizedTrip = (req, res, next) => {
       const tripDay = {
         dayIndex: curr.dayIndex + 1,
         date: curr.date,
-        locations: locationsByDay[0],
+        locations: locationsByDay,
         highlight: highlightDay,
       };
 

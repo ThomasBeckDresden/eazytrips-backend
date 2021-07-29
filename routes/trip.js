@@ -17,20 +17,20 @@ const getOptimizedTrip = require("../middleware/getOptimizedTrip");
 // Initial request with destination, dates etc
 router.post(
   "/",
-  // validatorsInitialRequest,
-  // validateTripRequest,
-  // getPlaces,
+  validatorsInitialRequest,
+  validateTripRequest,
+  getPlaces,
   provideTripDataRaw
 );
 
 // Updated request containing updated trip data
 router.put(
   "/",
-  // validatorsUpdatedRequest,
-  // validateTripRequest,
-  // getDurations,
-  // getTimeSlots,
-  // getOptimizedTrip,
+  validatorsUpdatedRequest,
+  validateTripRequest,
+  getDurations,
+  getTimeSlots,
+  getOptimizedTrip,
   provideTripDataFinal
 );
 

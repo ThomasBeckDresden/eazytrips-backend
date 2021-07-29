@@ -61,7 +61,7 @@ const getPlaces = async (req, res, next) => {
 
       // get destination coords + adress
       const { data: dataGeocodeDestination } = await axios(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${destination}&key=${apiGoogle}`
       );
       destinationCoords = dataGeocodeDestination.results[0].geometry.location;
       destinationAddress = dataGeocodeDestination.results[0].formatted_address;
@@ -81,6 +81,7 @@ const getPlaces = async (req, res, next) => {
       tripStarts: tripStarts,
       tripEnds: tripEnds,
       destination: destinationAddress,
+      destinationCoords: destinationCoords,
       createdAt: dayjs(),
       accommodation: accommodationAddress,
       accommodationCoords: accommodationCoords,

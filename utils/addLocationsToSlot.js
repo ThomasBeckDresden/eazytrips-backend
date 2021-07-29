@@ -18,8 +18,7 @@ function addLocationsToSlot(
   currentSightId = "accommodation",
   locationsInSlot = []
 ) {
-  // add current sight to slot if travel time to destination + visit time
-  // below slot time (NOT IMPLEMENTED)
+  // add sight to slot
   if (!locationsVisited.includes(currentSightId)) {
     locationsInSlot.push({
       period: slotMetaInfo.period,
