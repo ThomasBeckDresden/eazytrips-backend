@@ -15,13 +15,12 @@ const getOptimizedTrip = (req, res, next) => {
   const trip = timeSlotsByDay.reduce(
     (acc, curr) => {
       // for each day, map over slots in day to get final list of locations to visit on that day
-      console.log(curr.slots);
       const locationsByDay = curr.slots.reduce((accLocations, currSlot) => {
         const slotTime = currSlot.slotEnds.diff(currSlot.slotStarts, "second");
-        // console.log("mapping over", slot.date);
-        // console.log("acc.locationsVisited is", acc.locationsVisited);
-        // console.log("slot Time is", slotTime);
-        // console.log("ENTERING RECURSION FOR SLOT");
+        console.log("mapping over", currSlot.date);
+        console.log("acc.locationsVisited is", accLocations.locationsVisited);
+        console.log("slot Time is", slotTime);
+        console.log("ENTERING RECURSION FOR SLOT");
 
         // initialize function with accommodation address of user, arrival time=departure time
         const locations = addLocationsToSlot(

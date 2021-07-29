@@ -45,28 +45,75 @@ function addLocationsToSlot(
     userLocations.includes(sight.destination)
   );
 
-  // console.log(
-  //   "###############################################################"
-  // );
-  // console.log(durationsListRanked);
+  console.log(
+    "###############################################################"
+  );
 
-  // console.log(`starting point is location nr ${currentSightId}
-  //     durations list ranked is ${durationsListRanked}
-  //     totalSightTime is ${totalSightsTime}
-  //     locations in Slot are ${locationsInSlot}
-  //     locationsVisited are ${locationsVisited}`);
+  console.log(`starting point is location nr ${currentSightId}
+      durations list ranked is ${durationsListRanked}
+      totalSightTime is ${totalSightsTime}
+      locations in Slot are ${locationsInSlot}
+      locationsVisited are ${locationsVisited}`);
+  console.log(`Arrival time this location is ${dayjs(arrivalTime).format()}`);
+  console.log(
+    `Departure  time next location is ${dayjs(departureTime).format()}`
+  );
 
   // FOR EACH sight in durationsList that IS user defined:
-  iterateOverLocations(durationsListRankedUser);
+  iterateOverLocations(
+    departureTime,
+    slotTime,
+    durations,
+    slotMetaInfo,
+    locationsVisited,
+    userLocations,
+    durationToNext,
+    totalSightsTime,
+    locationsInSlot,
+    durationsListRankedUser
+  );
 
   // FOR EACH sight in durationsList that IS NOT user defined:
-  iterateOverLocations(durationsListRanked);
+  iterateOverLocations(
+    departureTime,
+    slotTime,
+    durations,
+    slotMetaInfo,
+    locationsVisited,
+    userLocations,
+    durationToNext,
+    totalSightsTime,
+    locationsInSlot,
+    durationsListRanked
+  );
 
   // HELPER FUNCTION: iterate over locations
-  function iterateOverLocations(durationsListRanked) {
+  function iterateOverLocations(
+    departureTime,
+    slotTime,
+    durations,
+    slotMetaInfo,
+    locationsVisited,
+    userLocations,
+    durationToNext,
+    totalSightsTime,
+    locationsInSlot,
+    durationsListRanked
+  ) {
     for (const nextSight of durationsListRanked) {
       const nextSightId = nextSight.destination;
-      // console.log(`nextSight in for each is ${nextSightId}`);
+
+      // only for logging
+      if (durationsListRanked.length < 20) {
+        console.log("inside user locations");
+      } else {
+        console.log(
+          "Inside other locations",
+          `durations list length is ${durationsListRanked.length}`
+        );
+      }
+
+      console.log(`nextSight in for each is ${nextSightId}`);
 
       // Check if potential next sight has not been visited yet and is not equal to current sight
       if (
@@ -92,6 +139,15 @@ function addLocationsToSlot(
           const departureTimeNext = departureTime.add(
             durationToNext + sightTime,
             "seconds"
+          );
+
+          console.log(
+            `Arrival time next location is ${dayjs(arrivalTimeNext).format()}`
+          );
+          console.log(
+            `Departure  time next location is ${dayjs(
+              departureTimeNext
+            ).format()}`
           );
 
           return addLocationsToSlot(
