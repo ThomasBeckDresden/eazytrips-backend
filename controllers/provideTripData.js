@@ -1,6 +1,6 @@
 const provideTripDataRaw = (req, res, next) => {
   const { tripDataRaw } = req.mockData;
-  res.send(tripDataRaw);
+  res.json(tripDataRaw);
 };
 
 const provideTripDataFinal = (req, res, next) => {
@@ -37,7 +37,7 @@ const provideTripDataFinal = (req, res, next) => {
   //   durations,
   //   timeSlots,
   // };
-  res.send(tripData);
+  res.json(tripData);
 };
 
 module.exports = { provideTripDataFinal, provideTripDataRaw };
