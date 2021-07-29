@@ -1,0 +1,3047 @@
+{
+  "tripId": "c4bf9b22-73a5-4fd0-bd0e-1b27fe3570c9",
+  "tripName": "Trip to barcelona",
+  "tripStarts": "2021-08-04T15:45",
+  "tripEnds": "2021-08-08T15:45",
+  "destination": "barcelona",
+  "createdAt": "2021-07-29T13:45:30.184Z",
+  "accommodation": "",
+  "accommodationCoords": {
+    "lat": 41.3850639,
+    "lng": 2.1734035
+  },
+  "transportation": {
+    "walking": true,
+    "public": false
+  },
+  "userLocations": [
+    "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+    "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+    "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+    "ChIJg2xxlvmipBIRg1jhdSQR9hY"
+  ],
+  "trip": [
+    {
+      "dayIndex": 0,
+      "date": "2021-08-04T15:45",
+      "locations": [
+        {
+          "period": "afternoon",
+          "arrivalTime": "2021-08-04T15:45:00.000Z",
+          "departureTime": "2021-08-04T15:45:00.000Z",
+          "travelTo": 0,
+          "place_id": "accommodation"
+        },
+        {
+          "period": "afternoon",
+          "arrivalTime": "2021-08-04T15:48:40.820Z",
+          "departureTime": "2021-08-04T17:03:40.820Z",
+          "travelTo": 220.82,
+          "place_id": "ChIJg2xxlvmipBIRg1jhdSQR9hY"
+        }
+      ],
+      "highlight": {
+        "rating": 4.6,
+        "place_id": "ChIJg2xxlvmipBIRg1jhdSQR9hY"
+      }
+    },
+    {
+      "dayIndex": 1,
+      "date": "2021-08-05T00:00:00",
+      "locations": [
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-05T09:00:00.000Z",
+          "departureTime": "2021-08-05T09:00:00.000Z",
+          "travelTo": 0,
+          "place_id": "accommodation"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-05T09:05:09.070Z",
+          "departureTime": "2021-08-05T10:20:09.070Z",
+          "travelTo": 309.07,
+          "place_id": "ChIJGUgrYPGipBIRS9ZgHK_C7B4"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-05T10:32:49.150Z",
+          "departureTime": "2021-08-05T11:47:49.150Z",
+          "travelTo": 760.08,
+          "place_id": "ChIJFf0mA_yipBIRmrj06fT0Zfc"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-05T09:01:51.390Z",
+          "departureTime": "2021-08-05T10:16:51.390Z",
+          "travelTo": 111.39,
+          "place_id": "ChIJI96t3faipBIRLQVI9EYIVJ8"
+        }
+      ],
+      "highlight": {
+        "rating": 4.5,
+        "place_id": "ChIJGUgrYPGipBIRS9ZgHK_C7B4"
+      }
+    },
+    {
+      "dayIndex": 2,
+      "date": "2021-08-06T00:00:00",
+      "locations": [
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-06T09:00:00.000Z",
+          "departureTime": "2021-08-06T09:00:00.000Z",
+          "travelTo": 0,
+          "place_id": "accommodation"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-06T09:06:16.800Z",
+          "departureTime": "2021-08-06T10:21:16.800Z",
+          "travelTo": 376.8,
+          "place_id": "ChIJAVoetfeipBIR1a1z3FTGCoY"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-06T10:27:32.490Z",
+          "departureTime": "2021-08-06T11:42:32.490Z",
+          "travelTo": 375.69,
+          "place_id": "ChIJ3fHTIFiipBIRpKXCn_E_oJY"
+        }
+      ],
+      "highlight": {
+        "rating": 4.5,
+        "place_id": "ChIJAVoetfeipBIR1a1z3FTGCoY"
+      }
+    },
+    {
+      "dayIndex": 3,
+      "date": "2021-08-07T00:00:00",
+      "locations": [
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-07T09:00:00.000Z",
+          "departureTime": "2021-08-07T09:00:00.000Z",
+          "travelTo": 0,
+          "place_id": "accommodation"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-07T09:09:29.670Z",
+          "departureTime": "2021-08-07T10:24:29.670Z",
+          "travelTo": 569.67,
+          "place_id": "ChIJ0V6MrPWipBIRKnssXv0o_Y4"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-07T10:41:08.150Z",
+          "departureTime": "2021-08-07T11:56:08.150Z",
+          "travelTo": 998.48,
+          "place_id": "ChIJZTiFwleipBIRj8RWjPOrnLk"
+        }
+      ],
+      "highlight": {
+        "rating": 4.3,
+        "place_id": "ChIJ0V6MrPWipBIRKnssXv0o_Y4"
+      }
+    },
+    {
+      "dayIndex": 4,
+      "date": "2021-08-08T15:45",
+      "locations": [
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-08T09:00:00.000Z",
+          "departureTime": "2021-08-08T09:00:00.000Z",
+          "travelTo": 0,
+          "place_id": "accommodation"
+        },
+        {
+          "period": "morning",
+          "arrivalTime": "2021-08-08T09:13:09.770Z",
+          "departureTime": "2021-08-08T10:28:09.770Z",
+          "travelTo": 789.77,
+          "place_id": "ChIJSXLa41aipBIR8O0eAyi4epg"
+        }
+      ],
+      "highlight": {
+        "rating": 3.9,
+        "place_id": "ChIJSXLa41aipBIR8O0eAyi4epg"
+      }
+    }
+  ],
+  "rawDataPlaces": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3870154,
+          "lng": 2.1700471
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3884825302915,
+            "lng": 2.17153665
+          },
+          "southwest": {
+            "lat": 41.3857845697085,
+            "lng": 2.16868925
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Plaça de Catalunya",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 12000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109414072351888856404\">Marina Nosenko</a>"
+          ],
+          "photo_reference": "Aap_uEBRDrXJhDz9Pr18wBayz7y0eyAK2dMU-L3gSjBAppYGbvTiwsegqDcVJ-plaNt_VNSy5RpjIIRf7rQX-rSkiCBC9mwttJRynwMRgY74X2Spz9L50wHPNwFv8Ln48npwjOHWaJ5TF0aeqRt9FdMfJ4rqa5uo4uvFH1MPNE2-eorr8tgU",
+          "width": 9000
+        }
+      ],
+      "place_id": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+      "plus_code": {
+        "compound_code": "95PC+R2 Barcelona, Spain",
+        "global_code": "8FH495PC+R2"
+      },
+      "rating": 4.5,
+      "reference": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 133241,
+      "vicinity": "Plaça de Catalunya, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.38583269999999,
+          "lng": 2.1799502
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3871809802915,
+            "lng": 2.181256980291502
+          },
+          "southwest": {
+            "lat": 41.3844830197085,
+            "lng": 2.178559019708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+      "name": "Capella d'en Marcús",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109843417020709450168\">pere guiu</a>"
+          ],
+          "photo_reference": "Aap_uEBX1O4r40RIgZXunFnYFW1oyA_4kaqDyg7f_CNkAq1GbiXBfKDNierxB2RLjHjGlbGVlWb0yhFt_bHc05mPzHPV72a_VRnqb_ZE2UxFEEJ-Uqev6bqIb4uNBuO586Q8i9M2KLj6qc3fExHz9UAvqth-Hy5LVsTF8bZ45Pf86WJqNS29",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+      "plus_code": {
+        "compound_code": "95PH+8X Barcelona, Spain",
+        "global_code": "8FH495PH+8X"
+      },
+      "rating": 4.3,
+      "reference": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 61,
+      "vicinity": "Carrer dels Carders, 2, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3917,
+          "lng": 2.164918
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3931151802915,
+            "lng": 2.166341330291502
+          },
+          "southwest": {
+            "lat": 41.3904172197085,
+            "lng": 2.163643369708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Casa Batlló",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 450,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110667982712595093287\">J.M. S.Q.</a>"
+          ],
+          "photo_reference": "Aap_uEAtxQeSKWTuj3IQaF0UXjPDGq0qyqi2mMQPDtu-ibkTjlZic--Rw5zwDlWG7MnfTlfjwwGOjcjW5t2lOo05DgXz4Cl-y0EBmLR0cX1pcgzZlY3Ra64zmYzG58cTen6Ed0Ws1DwaR70WbNLgUZ_Swxr0xqPqNfuNwijvn8wOf7DVjnDE",
+          "width": 483
+        }
+      ],
+      "place_id": "ChIJYUFLSe2ipBIRD04uni940kA",
+      "plus_code": {
+        "compound_code": "95R7+MX Barcelona, Spain",
+        "global_code": "8FH495R7+MX"
+      },
+      "rating": 4.6,
+      "reference": "ChIJYUFLSe2ipBIRD04uni940kA",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 76369,
+      "vicinity": "Passeig de Gràcia, 43, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3952155,
+          "lng": 2.1619024
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3965212302915,
+            "lng": 2.163306380291502
+          },
+          "southwest": {
+            "lat": 41.39382326970851,
+            "lng": 2.160608419708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Casa Milà",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113860076915348869315\">Raquel Prieto</a>"
+          ],
+          "photo_reference": "Aap_uEATP4Xxpn5DVFBy80E1OplaK3gok3mulQCoa72JgIbIOWmETyzDwyozCR9XSCBop7UVx7RIUBbRdcIOpCVziO2cv0KjHgT2I5TnBCoebb_c7Jpo74PzONvYbwE-KIZTLsct2ODj4hlICLaScnAGuNB2JGQjxairhi3yl7gawZzZbNU",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+      "plus_code": {
+        "compound_code": "95W6+3Q Barcelona, Spain",
+        "global_code": "8FH495W6+3Q"
+      },
+      "rating": 4.6,
+      "reference": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 60120,
+      "vicinity": "Passeig de Gràcia, 92, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3788851,
+          "lng": 2.1742398
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3802639802915,
+            "lng": 2.175534380291502
+          },
+          "southwest": {
+            "lat": 41.3775660197085,
+            "lng": 2.172836419708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Güell Palace",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100125453622260103947\">Palacio Güell</a>"
+          ],
+          "photo_reference": "Aap_uECP9CGb-a5WrJxaTCYL-rL3nCDfJzKm03J_29KL00IDpnGNH10uIR3HkM4hFrFtZDlh_6e-xg4NtQust8WnEdiUJ5-W_dtWql8C3OMyDu_y3m4YuwoC0883aBaxAF254_rwOzyyeGrD26jUeVvhiojR-gutMT4E5-YtwgM4D3crThNS",
+          "width": 610
+        }
+      ],
+      "place_id": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+      "plus_code": {
+        "compound_code": "95HF+HM Barcelona, Spain",
+        "global_code": "8FH495HF+HM"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "premise",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 13921,
+      "vicinity": "Carrer Nou de la Rambla, 3-5, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3852706,
+          "lng": 2.1809472
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3865595802915,
+            "lng": 2.182214430291502
+          },
+          "southwest": {
+            "lat": 41.3838616197085,
+            "lng": 2.179516469708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Picasso Museum",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 9000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101323838899712597275\">Marcus Hansson</a>"
+          ],
+          "photo_reference": "Aap_uEBXWaJFNPfSmQ3LiRKorEcgodYSqJHOq62HqHpPWImlr0crExIN3V45gMRpbuJOUVfgswfhlb82gqNOVrjkw-8l3SGLO05ZWPCeOa1SzvMFlrqHeuzGGONP-ZJs32i4E5wudp412gBAE6QOH49AzC5LcK8HU7hH-ln3oeneiCcI2GOo",
+          "width": 12000
+        }
+      ],
+      "place_id": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+      "plus_code": {
+        "compound_code": "95PJ+49 Barcelona, Spain",
+        "global_code": "8FH495PJ+49"
+      },
+      "rating": 4.4,
+      "reference": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 22434,
+      "vicinity": "Carrer de Montcada, 15-23, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3875752,
+          "lng": 2.1753128
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38883628029149,
+            "lng": 2.176773230291501
+          },
+          "southwest": {
+            "lat": 41.38613831970849,
+            "lng": 2.174075269708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Palau de la Música Catalana",
+      "photos": [
+        {
+          "height": 3378,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102888276412420232045\">luis vidilla</a>"
+          ],
+          "photo_reference": "Aap_uEDYLN2wv9eyiP8ELc7TnWUD11vgTxbJWqEfphE97V6lpXzKFViyqz3BJn3BmAF92aHpJb3IU4_TUkzOht2XZWD_WMzwT1MeVT_MxB6yuqEvL-YDb-ZIPBNpXpM6G-TdB2uiOoqDfxiymgZ_mtijMQ9Y-i4Cf3XL1vSbxP0QKs6eNAmA",
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+      "plus_code": {
+        "compound_code": "95QG+24 Barcelona, Spain",
+        "global_code": "8FH495QG+24"
+      },
+      "rating": 4.7,
+      "reference": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 28482,
+      "vicinity": "Carrer del Palau de la Música, 4-6, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.383962,
+          "lng": 2.1761991
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38562468029151,
+            "lng": 2.1782971
+          },
+          "southwest": {
+            "lat": 41.38292671970851,
+            "lng": 2.1752647
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+      "name": "Cathedral of Barcelona",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 766,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111149741898700371774\">shokry mahsob</a>"
+          ],
+          "photo_reference": "Aap_uEDxkm4LInrPtUyxxOg_o9XnSvbs8yYBLlmtPw8tsUwC2wPbcKPPbIjzB5kjwZTjOixy0dEDMZTKr0geFj6AANupzWQ5mlAPiXE7rbkK85m9WXCikwGxWGc2MAX2eqkojB8E1ODbSAUGp9MoSZbR_M053OqnasiKkfJyswaGcrGYXCDK",
+          "width": 720
+        }
+      ],
+      "place_id": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+      "plus_code": {
+        "compound_code": "95MG+HF Barcelona, Spain",
+        "global_code": "8FH495MG+HF"
+      },
+      "rating": 4.6,
+      "reference": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 51032,
+      "vicinity": "Pla de la Seu, s/n, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.38173990000001,
+          "lng": 2.1715853
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3832684302915,
+            "lng": 2.173333880291502
+          },
+          "southwest": {
+            "lat": 41.3805704697085,
+            "lng": 2.170635919708499
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "Mercado de La Boqueria",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3631,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103246893268630984800\">Julio Manuel Merino #LocalGuides</a>"
+          ],
+          "photo_reference": "Aap_uEC6RY5ZoRm4tNEgDk1JMvt4FGpb9q33nHDi6lrDf15dDqOYKROYR1FoK6rW2UJJwVTzHIgb4m5X-mwF4wXlJRuhkzcQJn5fRdx4p4X2QAuB_H2ElWYsN8QOFmN0J3RsOSJPjKgO2zgx_entWWvJnle_QkK8xtcjFwgV6K1AvQO2byHO",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+      "plus_code": {
+        "compound_code": "95JC+MJ Barcelona, Spain",
+        "global_code": "8FH495JC+MJ"
+      },
+      "rating": 4.5,
+      "reference": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 103681,
+      "vicinity": "La Rambla, 91, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3838871,
+          "lng": 2.1820711
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38515333029149,
+            "lng": 2.183454480291502
+          },
+          "southwest": {
+            "lat": 41.3824553697085,
+            "lng": 2.180756519708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+      "name": "Basilica of Santa Maria del Mar",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105348891392626431199\">过客</a>"
+          ],
+          "photo_reference": "Aap_uED7hO2djNNoPYXzPqjLdRg84N9vDjzuH1e8_2QlYUcEZwduTbpTIxderPNSRZjfTlsXgCQJO1ZUQUK2BT0vdeeF-iZ58U0suZw0nEkKdLm0AsBW3VHgkyLgoGK0nld7EohASgES-obVKUNpMaO4eWYjcFOVJ44-cDJBptuskrTx2j_d",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+      "plus_code": {
+        "compound_code": "95MJ+HR Barcelona, Spain",
+        "global_code": "8FH495MJ+HR"
+      },
+      "rating": 4.7,
+      "reference": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 28209,
+      "vicinity": "Plaça de Santa Maria, 1, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.38464229999999,
+          "lng": 2.1716533
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38601008029149,
+            "lng": 2.173000130291502
+          },
+          "southwest": {
+            "lat": 41.3833121197085,
+            "lng": 2.170302169708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Ateneu Barcelonès",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115314453252100369910\">Cristina Vilata</a>"
+          ],
+          "photo_reference": "Aap_uEBh3JNolM3nyzL60gH-sWy7zq6H_oLslkzk0LbOY8DlafRnGQYqtJ49fElRVrDUFP2iZagOTJet6xK9N5EGRckceIMgKx_0rmZWXp0lnW1-2p1AstVaBVgHK1I-Md5yyhE0aoCGScRdkddzKYtnvJbM4jFT4LO5TaLz-A54TJoIeFnh",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+      "plus_code": {
+        "compound_code": "95MC+VM Barcelona, Spain",
+        "global_code": "8FH495MC+VM"
+      },
+      "rating": 4.5,
+      "reference": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 1460,
+      "vicinity": "Carrer de la Canuda, 6, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.37684389999999,
+          "lng": 2.184339199999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3785433302915,
+            "lng": 2.185286080291502
+          },
+          "southwest": {
+            "lat": 41.3758453697085,
+            "lng": 2.182588119708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Aquarium Barcelona",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3648,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114673260498272148431\">Petr Mikeska</a>"
+          ],
+          "photo_reference": "Aap_uEC7zQ9i9BO6i7bC3UPTxC8lajLMc7zJK6ft3qrx8uiaa0VPNa-ZL5EN4spGzB7UEBQIevs28FimfSoxEbu1-sIBSzN2Cr3xChEUjl2kwd1BSugcYh0Ml9h9QDG4sIjIe91m7ThgYMRbQO-wlBt25jZDBbx64zjMJbp6E5PjMG9CTRN6",
+          "width": 5472
+        }
+      ],
+      "place_id": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+      "plus_code": {
+        "compound_code": "95GM+PP Barcelona, Spain",
+        "global_code": "8FH495GM+PP"
+      },
+      "rating": 4.1,
+      "reference": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+      "scope": "GOOGLE",
+      "types": [
+        "aquarium",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 38544,
+      "vicinity": "del Port Vell, Moll d'Espanya, s/n, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3774089,
+          "lng": 2.1773837
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3786384302915,
+            "lng": 2.178510130291502
+          },
+          "southwest": {
+            "lat": 41.3759404697085,
+            "lng": 2.175812169708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Museu de Cera de Barcelona",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1554,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111058335644200893982\">Museu de Cera de Barcelona</a>"
+          ],
+          "photo_reference": "Aap_uEBo5xNYKehni8Y-iQL0V1XbiQm1X8R85H0COhqvBT152gJAmBXNZV0DCHvRNtBGbc7i73u5wt1eph0fpN_JdsAu4d_VhaE07YaJrN_dmSS1Hwg4wU4xEBPVhAoFMCStHbEfAPl2MLvYFObeFqtvenYLE_mjcuYYVm5-_Wa-MwE5wVjR",
+          "width": 2000
+        }
+      ],
+      "place_id": "ChIJSXLa41aipBIR8O0eAyi4epg",
+      "plus_code": {
+        "compound_code": "95GG+XX Barcelona, Spain",
+        "global_code": "8FH495GG+XX"
+      },
+      "rating": 3.9,
+      "reference": "ChIJSXLa41aipBIR8O0eAyi4epg",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2976,
+      "vicinity": "Passatge de la Banca, 7, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3831913,
+          "lng": 2.166866799999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38434893029149,
+            "lng": 2.168500730291502
+          },
+          "southwest": {
+            "lat": 41.3816509697085,
+            "lng": 2.165802769708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Barcelona Museum of Contemporary Art",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110535795258680714316\">Jan Kroll</a>"
+          ],
+          "photo_reference": "Aap_uEBlfXulPDbGdY_momkx66hwVXc_qNON1g0Xxuz7ms13gE4y6dDYqMdm1FcttNxiADsXf22opwx5wRMqFJ8DZdKHjnKp1qBYPx24qkgOlpaNJ1tyNgsd0QONqX6Tsuvtj0FT-eZHcMzGL9F-uF8ZZ_gE6nstmhP-BARXMTXLU2a7Xh7U",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+      "plus_code": {
+        "compound_code": "95M8+7P Barcelona, Spain",
+        "global_code": "8FH495M8+7P"
+      },
+      "rating": 4.3,
+      "reference": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+      "scope": "GOOGLE",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 10063,
+      "vicinity": "Plaça dels Àngels, 1, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3850107,
+          "lng": 2.1802788
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3863147302915,
+            "lng": 2.181674380291502
+          },
+          "southwest": {
+            "lat": 41.3836167697085,
+            "lng": 2.178976419708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Museu Europeu d’Art Modern",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2624,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106720075787590593722\">Museu Europeu d&#39;Art Modern</a>"
+          ],
+          "photo_reference": "Aap_uECEYBEklK0zcj9pM1YzqWGnuILSfwteV16T6TjyYXNS5whoAxTlFb0JFgDVmCIjVNs9HnA3nuIKHPcIQ02S3LOc5XFfck1FaPP8lkXFbf967mJaDcnSz5UjWdf1JQ6RC0mrhRei0X5VWxN0WYZymaGfABS_k_Rum2gNxxl1MXmHc6y-",
+          "width": 3936
+        }
+      ],
+      "place_id": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+      "plus_code": {
+        "compound_code": "95PJ+24 Barcelona, Spain",
+        "global_code": "8FH495PJ+24"
+      },
+      "rating": 4.4,
+      "reference": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1205,
+      "vicinity": "Carrer de la Barra de Ferro, 5, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.38019690000001,
+          "lng": 2.1732948
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38170453029149,
+            "lng": 2.174904430291502
+          },
+          "southwest": {
+            "lat": 41.37900656970849,
+            "lng": 2.172206469708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_pinlet",
+      "name": "Gran Teatre del Liceu",
+      "photos": [
+        {
+          "height": 6016,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118298832106208829700\">Gran Teatre del Liceu</a>"
+          ],
+          "photo_reference": "Aap_uEAKKLbABHSWAQAPJ5PFyN_3Em0xHsKLoJF8IVH15iLZ55o7FASgMfBvNCuc5FPoaJ82D23q9x0f_xrsR10-vEobIcS3NqmI_wBTW4E_SUWlXr5UQRtLyWpqRh88BhVvgneGYuBNMM5Cu5pCEbHj1ILF7r-DLCXdDUTwbf3nE_gGgOFj",
+          "width": 8858
+        }
+      ],
+      "place_id": "ChIJW8xABViipBIRnWNZEAqOXaA",
+      "plus_code": {
+        "compound_code": "95JF+38 Barcelona, Spain",
+        "global_code": "8FH495JF+38"
+      },
+      "rating": 4.7,
+      "reference": "ChIJW8xABViipBIRnWNZEAqOXaA",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 9161,
+      "vicinity": "La Rambla, 51-59, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.38731810000001,
+          "lng": 2.1816803
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38853038029149,
+            "lng": 2.183133580291502
+          },
+          "southwest": {
+            "lat": 41.38583241970849,
+            "lng": 2.180435619708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Museu de la Xocolata",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102488018932882543854\">Juan Alfonso Alonso Bernardo</a>"
+          ],
+          "photo_reference": "Aap_uEA3tTVAf8UxGCc1vepsFr_NgQJrq20uu8393LwsvApLqjFN5apS3u61XOmZrTouu0ykDSyGG060OhdEfL78wU8wxYeAMVWIq-I_dUrwAmrF2wdH9RtPXznbZ-ns3hzJJ1M2JsoFujMNSH852Pu_DWnb12Pq0WM5LsLO4rb3tlw0f5Ud",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+      "plus_code": {
+        "compound_code": "95PJ+WM Barcelona, Spain",
+        "global_code": "8FH495PJ+WM"
+      },
+      "rating": 3.8,
+      "reference": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+      "scope": "GOOGLE",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 5352,
+      "vicinity": "Carrer del Comerç, 36, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3821588,
+          "lng": 2.1739556
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.38358193029151,
+            "lng": 2.175171880291502
+          },
+          "southwest": {
+            "lat": 41.38088396970851,
+            "lng": 2.172473919708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+      "name": "Basílica de Santa Maria del Pi",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106120166031354475624\">Frank L.</a>"
+          ],
+          "photo_reference": "Aap_uEDzk2cyqdjxOewaoOYfAlF833lrAky70OI4tuOanMi8TSvfYoyZn4L9wXeKlLYUNw_nKAf-b5F8YBFBMfpWiU2hcglKn9edtJvlBtHGVKtjHheIjgLYTfXRM0zKavq0Aztu_GE22DawKALct3DwEQidoOE4qKzgJEVKlCmLjtufcawr",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJx5adlPeipBIRKWosvaChtG0",
+      "plus_code": {
+        "compound_code": "95JF+VH Barcelona, Spain",
+        "global_code": "8FH495JF+VH"
+      },
+      "rating": 4.5,
+      "reference": "ChIJx5adlPeipBIRKWosvaChtG0",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 4683,
+      "vicinity": "Plaça del Pi, 7, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3910524,
+          "lng": 2.1806449
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.39267948029149,
+            "lng": 2.181953680291501
+          },
+          "southwest": {
+            "lat": 41.3899815197085,
+            "lng": 2.179255719708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
+      "name": "Arco de Triunfo de Barcelona",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3864,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116148399021804899301\">Fernando H. Ahuvia</a>"
+          ],
+          "photo_reference": "Aap_uED-r7hy6lcI-keEBYKITBb0lvs44hXJZMRonyoKkpRZJbIr4oWLp2UufJYedHz52xThHCx2Gm-XzIfRt7WLjuHIfoSslVL8qYXd2Nj2EF1okjavOK-lLELeuG8OEg7lTh15wHJsK8p5QBmLnKOD1mf4idoqWZdsvfCSeNzH5WFtDNv8",
+          "width": 5152
+        }
+      ],
+      "place_id": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+      "plus_code": {
+        "compound_code": "95RJ+C7 Barcelona, Spain",
+        "global_code": "8FH495RJ+C7"
+      },
+      "rating": 4.6,
+      "reference": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+      "scope": "GOOGLE",
+      "types": ["tourist_attraction", "point_of_interest", "establishment"],
+      "user_ratings_total": 58335,
+      "vicinity": "Passeig de Lluís Companys, Barcelona"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.3771925,
+          "lng": 2.1757465
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.3785251302915,
+            "lng": 2.177296430291502
+          },
+          "southwest": {
+            "lat": 41.3758271697085,
+            "lng": 2.174598469708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+      "icon_background_color": "#13B5C7",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+      "name": "Arts Santa Mònica",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1152,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117599304984959653902\">Arts Santa Mònica</a>"
+          ],
+          "photo_reference": "Aap_uECiL5eW3B9Uo6uCxDxJjkWvHFq1yRtbqrFlwLb6KrI6WRvIOojZLDRmT0KTM80PHSft-6tSB0QDq7Wt_B7_uY9FXt3QSL9KXrRi_oKYcsXmS31oECp9AB9B3pRxU6XHk_d_wyUG1VMTkvEnnAubfUcI1blSaW7rmw787kSSirrPw7My",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+      "plus_code": {
+        "compound_code": "95GG+V7 Barcelona, Spain",
+        "global_code": "8FH495GG+V7"
+      },
+      "rating": 4.3,
+      "reference": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+      "scope": "GOOGLE",
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1040,
+      "vicinity": "La Rambla, 7, Barcelona"
+    }
+  ],
+  "durations": [
+    {
+      "source": "accommodation",
+      "durations": [
+        {
+          "destination": "accommodation",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 111.39
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 220.82
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 275.26
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 309.07
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 341.19
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 376.8
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 450.84
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 552.6
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 559.26
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 569.67
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 588.78
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 608.94
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 643.72
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 754.11
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 758.17
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 789.77
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 797.75
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 808.63
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1090.06
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1138.1
+        }
+      ]
+    },
+    {
+      "source": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+      "durations": [
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 260.53
+        },
+        {
+          "destination": "accommodation",
+          "duration": 309.07
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 470.02
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 478.96
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 496.23
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 529.07
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 537.57
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 546.91
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 610
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 748.64
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 760.08
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 800.39
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 819.49
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 841.19
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 883.87
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 903.8
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 918.03
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 937.37
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 949.41
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1365.47
+        }
+      ]
+    },
+    {
+      "source": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+      "durations": [
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 88.04
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 109.22
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 217.95
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 219.55
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 365.79
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 377.81
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 535.54
+        },
+        {
+          "destination": "accommodation",
+          "duration": 552.6
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 556.5
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 653.08
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 663.99
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 719.36
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 746.39
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 760.08
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 867.04
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 888.75
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 909.16
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1100.1
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1241.52
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1556.35
+        }
+      ]
+    },
+    {
+      "source": "ChIJYUFLSe2ipBIRD04uni940kA",
+      "durations": [
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 371.67
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 529.07
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 787.72
+        },
+        {
+          "destination": "accommodation",
+          "duration": 797.75
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 909.96
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 977.61
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 984.91
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 997.21
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 1042.63
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 1137.19
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1220.18
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 1241.52
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 1275.83
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 1281.83
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 1322.63
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 1362.65
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 1392.48
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 1445.22
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1476.6
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1854.15
+        }
+      ]
+    },
+    {
+      "source": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+      "durations": [
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 371.67
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 883.87
+        },
+        {
+          "destination": "accommodation",
+          "duration": 1138.1
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 1142.52
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 1224.78
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 1312.28
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1349.19
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 1352.01
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 1379.63
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1483.61
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 1491.98
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 1556.35
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 1596.66
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 1630.62
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 1637.46
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 1663.4
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 1708.19
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 1800.02
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1831.4
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 2181.52
+        }
+      ]
+    },
+    {
+      "source": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+      "durations": [
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 217.87
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 257.47
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 318.01
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 342.44
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 375.69
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 561.16
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 567.52
+        },
+        {
+          "destination": "accommodation",
+          "duration": 588.78
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 673.6
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 719.36
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 723.29
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 748.64
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 758.06
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 811.34
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 850.58
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 893.1
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1038.22
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1245.78
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1275.83
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1630.62
+        }
+      ]
+    },
+    {
+      "source": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+      "durations": [
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 49.69
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 88.04
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 160.01
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 208.02
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 414.41
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 446.9
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 574.28
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 588.28
+        },
+        {
+          "destination": "accommodation",
+          "duration": 608.94
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 684.87
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 720.33
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 723.29
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 778.17
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 841.19
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 852.02
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 853.47
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 867.49
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1156.44
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1322.63
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1637.46
+        }
+      ]
+    },
+    {
+      "source": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+      "durations": [
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 0
+        },
+        {
+          "destination": "accommodation",
+          "duration": 341.19
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 354.26
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 365.79
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 446.9
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 452.58
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 459.91
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 478.96
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 502.89
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 537.06
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 543.08
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 578.41
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 679.03
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 712.64
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 850.58
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 852.51
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 909.96
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 1019.97
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1051.57
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1145.14
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1224.78
+        }
+      ]
+    },
+    {
+      "source": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+      "durations": [
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 0
+        },
+        {
+          "destination": "accommodation",
+          "duration": 220.82
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 254.59
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 332.2
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 354.26
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 364.73
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 377.81
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 414.41
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 422.3
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 430.18
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 449.18
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 496.23
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 567.52
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 584.22
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 730.23
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 751.95
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 766.48
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 776.45
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 908.68
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 984.91
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1312.28
+        }
+      ]
+    },
+    {
+      "source": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+      "durations": [
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 234.51
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 235.44
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 296.52
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 375.69
+        },
+        {
+          "destination": "accommodation",
+          "duration": 376.8
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 422.3
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 469.83
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 470.02
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 545.08
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 601.91
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 679.03
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 728.49
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 746.39
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 778.17
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 812.94
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 947.98
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 997.21
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1114.35
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1208.13
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1352.01
+        }
+      ]
+    },
+    {
+      "source": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+      "durations": [
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 147.57
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 160.01
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 219.55
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 328.22
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 449.18
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 578.41
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 623.06
+        },
+        {
+          "destination": "accommodation",
+          "duration": 643.72
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 693.36
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 701.77
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 703.66
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 719.64
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 755.1
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 758.06
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 812.94
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 815.92
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 903.8
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1191.21
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1392.48
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1708.19
+        }
+      ]
+    },
+    {
+      "source": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+      "durations": [
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 0
+        },
+        {
+          "destination": "accommodation",
+          "duration": 111.39
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 260.53
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 277.43
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 296.52
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 332.2
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 423.22
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 452.58
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 458.28
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 561.16
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 663.99
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 670.65
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 720.33
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 730.55
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 755.1
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 762.15
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 787.72
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 865.49
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 899.62
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1142.52
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1201.45
+        }
+      ]
+    },
+    {
+      "source": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+      "durations": [
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 701.77
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 749.73
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 808.23
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 817.97
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 853.47
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 908.68
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 909.16
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 985.4
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 1018.24
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 1038.22
+        },
+        {
+          "destination": "accommodation",
+          "duration": 1090.06
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 1114.82
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 1145.14
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 1201.45
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 1208.13
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1350.54
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 1365.47
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1637.56
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1854.15
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 2181.52
+        }
+      ]
+    },
+    {
+      "source": "ChIJSXLa41aipBIR8O0eAyi4epg",
+      "durations": [
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 114.36
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 318.01
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 478.73
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 540.03
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 601.91
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 703.66
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 749.73
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 751.95
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 762.15
+        },
+        {
+          "destination": "accommodation",
+          "duration": 789.77
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 802.33
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 852.02
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 888.75
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 949.41
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 1020.9
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 1051.57
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1055.98
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1386.03
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1476.6
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1831.4
+        }
+      ]
+    },
+    {
+      "source": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+      "durations": [
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 458.28
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 469.83
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 546.91
+        },
+        {
+          "destination": "accommodation",
+          "duration": 569.67
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 649.53
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 656.42
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 766.48
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 811.34
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 852.51
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 977.61
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 998.48
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1055.98
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 1100.1
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 1106.76
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 1156.44
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 1191.21
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1280.17
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 1304.52
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1349.19
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1637.56
+        }
+      ]
+    },
+    {
+      "source": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+      "durations": [
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 49.69
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 109.22
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 147.57
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 253.6
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 364.73
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 459.91
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 538.6
+        },
+        {
+          "destination": "accommodation",
+          "duration": 559.26
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 619.85
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 635.18
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 670.65
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 673.6
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 728.49
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 800.39
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 802.33
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 808.23
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 817.8
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1106.76
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1281.83
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1596.66
+        }
+      ]
+    },
+    {
+      "source": "ChIJW8xABViipBIRnWNZEAqOXaA",
+      "durations": [
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 215.95
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 217.87
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 235.44
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 418.18
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 423.22
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 430.18
+        },
+        {
+          "destination": "accommodation",
+          "duration": 450.84
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 478.73
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 610
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 635.18
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 653.08
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 656.42
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 684.87
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 712.64
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 719.64
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 854.68
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1114.82
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1134.84
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1137.19
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1491.98
+        }
+      ]
+    },
+    {
+      "source": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+      "durations": [
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 208.02
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 217.95
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 253.6
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 328.22
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 367.27
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 543.08
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 584.22
+        },
+        {
+          "destination": "accommodation",
+          "duration": 754.11
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 758.09
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 854.68
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 865.49
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 893.1
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 937.37
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 947.98
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 985.4
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1020.9
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 1037.3
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1304.52
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1362.65
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1663.4
+        }
+      ]
+    },
+    {
+      "source": "ChIJx5adlPeipBIRKWosvaChtG0",
+      "durations": [
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 215.95
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 234.51
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 254.59
+        },
+        {
+          "destination": "accommodation",
+          "duration": 275.26
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 277.43
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 342.44
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 511.77
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 537.06
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 537.57
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 538.6
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 540.03
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 556.5
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 588.28
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 623.06
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 649.53
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 758.09
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 959.25
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1018.24
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1042.63
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1379.63
+        }
+      ]
+    },
+    {
+      "source": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+      "durations": [
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 367.27
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 502.89
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 535.54
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 574.28
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 619.85
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 693.36
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 776.45
+        },
+        {
+          "destination": "accommodation",
+          "duration": 808.63
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 819.49
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 899.62
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 959.25
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 1114.35
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 1134.84
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1220.18
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 1245.78
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 1280.17
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 1350.54
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 1386.03
+        },
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 1393.46
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1483.61
+        }
+      ]
+    },
+    {
+      "source": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+      "durations": [
+        {
+          "destination": "ChIJZTiFwleipBIRj8RWjPOrnLk",
+          "duration": 0
+        },
+        {
+          "destination": "ChIJSXLa41aipBIR8O0eAyi4epg",
+          "duration": 114.36
+        },
+        {
+          "destination": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
+          "duration": 257.47
+        },
+        {
+          "destination": "ChIJW8xABViipBIRnWNZEAqOXaA",
+          "duration": 418.18
+        },
+        {
+          "destination": "ChIJx5adlPeipBIRKWosvaChtG0",
+          "duration": 511.77
+        },
+        {
+          "destination": "ChIJAVoetfeipBIR1a1z3FTGCoY",
+          "duration": 545.08
+        },
+        {
+          "destination": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
+          "duration": 730.23
+        },
+        {
+          "destination": "ChIJI96t3faipBIRLQVI9EYIVJ8",
+          "duration": 730.55
+        },
+        {
+          "destination": "accommodation",
+          "duration": 758.17
+        },
+        {
+          "destination": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
+          "duration": 815.92
+        },
+        {
+          "destination": "ChIJveK7vP6ipBIRiegu-jsxGX8",
+          "duration": 817.8
+        },
+        {
+          "destination": "ChIJtWCztVSipBIRYJl5aFMSIDs",
+          "duration": 817.97
+        },
+        {
+          "destination": "ChIJFf0mA_yipBIRmrj06fT0Zfc",
+          "duration": 867.04
+        },
+        {
+          "destination": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
+          "duration": 867.49
+        },
+        {
+          "destination": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
+          "duration": 918.03
+        },
+        {
+          "destination": "ChIJ0V6MrPWipBIRKnssXv0o_Y4",
+          "duration": 998.48
+        },
+        {
+          "destination": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
+          "duration": 1019.97
+        },
+        {
+          "destination": "ChIJC6CEtf2ipBIRkFQaF95uL1Q",
+          "duration": 1037.3
+        },
+        {
+          "destination": "ChIJoXZqNuOipBIRsZU39a8r_qk",
+          "duration": 1393.46
+        },
+        {
+          "destination": "ChIJYUFLSe2ipBIRD04uni940kA",
+          "duration": 1445.22
+        },
+        {
+          "destination": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
+          "duration": 1800.02
+        }
+      ]
+    }
+  ]
+}
