@@ -22,7 +22,7 @@
   ],
   "trip": [
     {
-      "dayIndex": 0,
+      "dayIndex": 1,
       "date": "2021-08-04T15:45",
       "locations": [
         {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "dayIndex": 1,
+      "dayIndex": 2,
       "date": "2021-08-05T00:00:00",
       "locations": [
         {
@@ -84,7 +84,7 @@
       }
     },
     {
-      "dayIndex": 2,
+      "dayIndex": 3,
       "date": "2021-08-06T00:00:00",
       "locations": [
         {
@@ -115,7 +115,7 @@
       }
     },
     {
-      "dayIndex": 3,
+      "dayIndex": 4,
       "date": "2021-08-07T00:00:00",
       "locations": [
         {
@@ -146,7 +146,7 @@
       }
     },
     {
-      "dayIndex": 4,
+      "dayIndex": 5,
       "date": "2021-08-08T15:45",
       "locations": [
         {
