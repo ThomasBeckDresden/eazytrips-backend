@@ -45,7 +45,7 @@ const provideTripDataFinal = (req, res, next) => {
     return { ...day, locations: locationNoAccomm };
   });
 
-  res.json(tripDataNoAccomm);
+  res.json({ ...tripData, trip: tripDataNoAccomm });
 };
 
 module.exports = { provideTripDataFinal, provideTripDataRaw };
