@@ -19,7 +19,7 @@ const provideTripDataFinal = (req, res, next) => {
     userLocations,
   } = req.body;
 
-  const { durations, timeSlots, trip } = req;
+  const { durations, timeSlots, trip, timeSlotsByDay, tripDays } = req;
 
   const tripData = {
     tripId,
@@ -36,7 +36,8 @@ const provideTripDataFinal = (req, res, next) => {
     trip,
     rawDataPlaces,
     durations,
-    timeSlots,
+    timeSlotsByDay,
+    tripDays,
   };
 
   const tripDataNoAccomm = tripData.trip.map((day) => {

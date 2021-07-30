@@ -67,7 +67,7 @@ const getPlaces = async (req, res, next) => {
         dataGeocodeAccommodation.results[0].formatted_address;
 
       // get destination coords + adress
-      accommodationAddress = Diacritics.clean(destination)
+      destinationAddress = Diacritics.clean(destination)
         .toLowerCase()
         .trim()
         .replace(regex, "%20");
