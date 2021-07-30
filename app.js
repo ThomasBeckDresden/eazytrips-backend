@@ -1,4 +1,5 @@
 require("dotenv").config();
+require('./database/client');
 
 const express = require("express");
 const path = require("path");
@@ -9,6 +10,7 @@ const cors = require("cors");
 const indexRouter = require("./routes/index");
 const mockDataRouter = require("./routes/mock");
 const tripRouter = require("./routes/trip");
+const userRouter = require("./routes/user");
 const loadMockData = require("./utils/loadMockData");
 
 const app = express();
@@ -24,5 +26,6 @@ app.use(loadMockData);
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
+app.use('/user', userRouter)
 
 module.exports = app;
