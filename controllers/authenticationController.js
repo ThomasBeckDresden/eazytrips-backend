@@ -12,7 +12,7 @@ const login = async (req, res) => {
     if (!match) return res.status(400).send("Invalid credentials");
 
     const token = user.createToken();
-    res.send(token);
+    res.set("x-authorization-token", token).send("Login Successful");
 };
 
 module.exports = { login };
