@@ -29,4 +29,14 @@ const create_user = async (req, res) => {
     }
 }
 
-module.exports = { create_user };
+const get_all_users = async (req, res) => {
+    console.log(req.headers);
+    try {
+        const user = await User.find();
+        res.json(user);
+    } catch (e) {
+        res.status(500).send(e.message);
+    }
+}
+
+module.exports = { create_user, get_all_users };
