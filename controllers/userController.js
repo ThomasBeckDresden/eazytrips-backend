@@ -19,7 +19,11 @@ const create_user = async (req, res) => {
 
         await user.save();
 
-        res.json({ _id: user._id, email: user.email });
+        const token = user.createToken();
+        res.set("x-authorization-token", token).json({
+            _id: user._id,
+            email: user.email,
+        });
     } catch (e) {
         res.status(500).send(e.message);
     }
