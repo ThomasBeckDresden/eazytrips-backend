@@ -12,6 +12,7 @@ const mockDataRouter = require("./routes/mock");
 const tripRouter = require("./routes/trip");
 const userRouter = require("./routes/user");
 const loadMockData = require("./utils/loadMockData");
+const authenticationRouter = require("./routes/authentication");
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(loadMockData);
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
-app.use('/user', userRouter)
+app.use('/user', userRouter);
+app.use('/auth', authenticationRouter);
 
 module.exports = app;
