@@ -23,11 +23,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 app.use(loadMockData);
+app.use(cors({ "exposedHeaders": "x-authorization-token" }));
 
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
 app.use('/user', userRouter);
 app.use('/auth', authenticationRouter);
+app.use('/users', userRouter);
 
 module.exports = app;
