@@ -11,7 +11,8 @@ const login = async (req, res) => {
     const match = await bcrypt.compare(password, user.password);
     if (!match) return res.status(400).send("Invalid credentials");
 
-    res.send("User is logged in");
+    const token = user.createToken();
+    res.send(token);
 };
 
 module.exports = { login };
