@@ -11,7 +11,7 @@ const getPlacesSuggestions = async (req, res, next) => {
   try {
     if (prefix) {
       const { data } =
-        await axios.get(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${prefix}&types=(cities)&key=${apiGoogle}&sessiontoken=${sessionToken}
+        await axios.get(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${prefix}&types=address&key=${apiGoogle}&sessiontoken=${sessionToken}
       `);
       console.log("fetched autocomplete");
       console.log(data);
