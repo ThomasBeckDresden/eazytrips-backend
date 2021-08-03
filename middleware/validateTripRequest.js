@@ -14,7 +14,7 @@ const validatorsUpdatedRequest = [
   check("tripEnds").notEmpty().isISO8601(),
   check("accommodationCoords").notEmpty().isObject(),
   check("rawDataPlaces").notEmpty().isArray({ min: 1 }),
-  check("userLocations").notEmpty(),
+  check("userLocations").isArray(),
 ];
 
 const validateTripRequest = (req, res, next) => {
