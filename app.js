@@ -10,7 +10,11 @@ const cors = require("cors");
 const indexRouter = require("./routes/index");
 const mockDataRouter = require("./routes/mock");
 const tripRouter = require("./routes/trip");
+const autocompleteRouter = require("./routes/autocomplete");
+
+
 const userRouter = require("./routes/user");
+
 const loadMockData = require("./utils/loadMockData");
 const authenticationRouter = require("./routes/authentication");
 
@@ -28,8 +32,9 @@ app.use(cors({ "exposedHeaders": "x-authorization-token" }));
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
+app.use("/autocomplete", autocompleteRouter);
+
 app.use('/user', userRouter);
 app.use('/auth', authenticationRouter);
-app.use('/users', userRouter);
 
 module.exports = app;

@@ -36,7 +36,7 @@ const getTimeSlots = (req, res, next) => {
   const timeSlotsByDay = getTimeSlotsByDay(tripDays, slotsTemplate);
 
   req.timeSlotsByDay = timeSlotsByDay.filter((day) => day !== undefined);
-  console.log(timeSlotsByDay);
+  req.tripDays = tripDays;
   next();
 };
 

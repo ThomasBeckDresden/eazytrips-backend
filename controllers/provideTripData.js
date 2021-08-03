@@ -1,42 +1,44 @@
 const provideTripDataRaw = (req, res, next) => {
-  const { tripDataRaw } = req.mockData;
+  const { tripDataRaw } = req;
   res.json(tripDataRaw);
 };
 
 const provideTripDataFinal = (req, res, next) => {
-  const { tripData } = req.mockData;
-  // const {
-  //   tripId,
-  //   tripName,
-  //   tripStarts,
-  //   tripEnds,
-  //   destination,
-  //   createdAt,
-  //   accommodation,
-  //   accommodationCoords,
-  //   transportation,
-  //   rawDataPlaces,
-  //   userLocations,
-  // } = req.body;
+  const {
+    tripId,
+    tripName,
+    tripStarts,
+    tripEnds,
+    destination,
+    destinationCoords,
+    createdAt,
+    accommodation,
+    accommodationCoords,
+    transportation,
+    rawDataPlaces,
+    userLocations,
+  } = req.body;
 
-  // const { durations, timeSlots, trip } = req;
+  const { durations, timeSlots, trip, timeSlotsByDay, tripDays } = req;
 
-  // const tripData = {
-  //   tripId,
-  //   tripName,
-  //   tripStarts,
-  //   tripEnds,
-  //   destination,
-  //   createdAt,
-  //   accommodation,
-  //   accommodationCoords,
-  //   transportation,
-  //   userLocations,
-  //   trip,
-  //   rawDataPlaces,
-  //   durations,
-  //   timeSlots,
-  // };
+  const tripData = {
+    tripId,
+    tripName,
+    tripStarts,
+    tripEnds,
+    destination,
+    destinationCoords,
+    createdAt,
+    accommodation,
+    accommodationCoords,
+    transportation,
+    userLocations,
+    trip,
+    rawDataPlaces,
+    durations,
+    timeSlotsByDay,
+    tripDays,
+  };
 
   // KEEP IN FINAL VERSION
   // const tripDataNoAccomm = tripData.trip.map((day) => {

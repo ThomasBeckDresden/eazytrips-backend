@@ -1,11 +1,13 @@
 const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
 const dayjs = require("dayjs");
+const Diacritics = require("diacritic");
 
 const getPlaces = async (req, res, next) => {
   const {
     tripName,
     destination,
+    destinationCoords,
     tripStarts,
     tripEnds,
     accommodation,
@@ -20,35 +22,21 @@ const getPlaces = async (req, res, next) => {
 
   try {
     let dataPlaces;
-    let destinationCoords;
-    let destinationAddress;
     let accommodationAddress;
     let accommodationCoords;
     const radius = transportation.public ? 10000 : 5000;
 
     if (!accommodation) {
       // set accommodation adress to destination
+      accommodationCoords = destinationCoords;
       accommodationAddress = destination;
-
-      // build proper query string
-
-      // get coords of accommodation = destination coords, accommodation adress = destination address
-      const { data: dataGeocode } = await axios(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
-      );
-      accommodationCoords = dataGeocode.results[0].geometry.location;
-      accommodationAddress = dataGeocode.results[0].formatted_address;
-      destinationCoords = dataGeocode.results[0].geometry.location;
-      destinationAddress = dataGeocode.results[0].formatted_address;
-
-      // get places for destination with coords = accommodation coords
-      const { data } = await axios(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${destinationCoords.lat}, ${destinationCoords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
-      );
-      dataPlaces = data;
     } else {
       // if accommodation is provided: get coords for accommodation and destination
-      accommodationAddress = accommodation;
+      const regex = /\W+/g;
+      accommodationAddress = Diacritics.clean(accommodation)
+        .toLowerCase()
+        .trim()
+        .replace(regex, "%20");
 
       // get coords of accommodation + address
       const { data: dataGeocodeAccommodation } = await axios(
@@ -58,20 +46,13 @@ const getPlaces = async (req, res, next) => {
         dataGeocodeAccommodation.results[0].geometry.location;
       accommodationAddress =
         dataGeocodeAccommodation.results[0].formatted_address;
-
-      // get destination coords + adress
-      const { data: dataGeocodeDestination } = await axios(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${accommodationAddress}&key=${apiGoogle}`
-      );
-      destinationCoords = dataGeocodeDestination.results[0].geometry.location;
-      destinationAddress = dataGeocodeDestination.results[0].formatted_address;
-
-      // get nearby places
-      const { data } = await axios(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${destinationCoords.lat}, ${destinationCoords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
-      );
-      dataPlaces = data;
     }
+
+    // get nearby places
+    const { data } = await axios(
+      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${destinationCoords.lat}, ${destinationCoords.lng}&radius=${radius}&type=tourist_attraction&key=${apiGoogle}`
+    );
+    dataPlaces = data;
 
     console.log(dataPlaces);
     // create final data structure
@@ -80,12 +61,14 @@ const getPlaces = async (req, res, next) => {
       tripName: tripName,
       tripStarts: tripStarts,
       tripEnds: tripEnds,
-      destination: destinationAddress,
+      destination: destination,
+      destinationCoords: destinationCoords,
       createdAt: dayjs(),
       accommodation: accommodationAddress,
       accommodationCoords: accommodationCoords,
       transportation: transportation,
       rawDataPlaces: dataPlaces.results,
+      userLocations: [],
     };
 
     req.tripDataRaw = tripDataRaw;

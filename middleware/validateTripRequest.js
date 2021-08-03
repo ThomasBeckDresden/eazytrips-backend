@@ -1,7 +1,7 @@
 const { check, validationResult } = require("express-validator");
 
 const validatorsInitialRequest = [
-  check("destination").notEmpty().isAlpha(),
+  check("destination").notEmpty(),
   check("tripStarts").notEmpty().isISO8601(),
   check("tripEnds").notEmpty().isISO8601(),
 ];
@@ -9,11 +9,12 @@ const validatorsInitialRequest = [
 const validatorsUpdatedRequest = [
   check("tripId").notEmpty(),
   check("createdAt").notEmpty().isISO8601(),
-  check("destination").notEmpty().isAlpha(),
+  check("destination").notEmpty(),
   check("tripStarts").notEmpty().isISO8601(),
   check("tripEnds").notEmpty().isISO8601(),
   check("accommodationCoords").notEmpty().isObject(),
   check("rawDataPlaces").notEmpty().isArray({ min: 1 }),
+  check("userLocations").notEmpty(),
 ];
 
 const validateTripRequest = (req, res, next) => {
