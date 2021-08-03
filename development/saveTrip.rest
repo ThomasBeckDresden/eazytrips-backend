@@ -1,0 +1,26 @@
+Get http://localhost:3000
+
+###
+
+POST http://localhost:3000/save_trip/
+Content-Type: application/json
+
+{
+    "tripId": "dsgfwergrz532453gfhgfhdf",
+    "tripName": "Trip to Berlin, Germany",
+    "tripStarts": "2021-08-05T14:11",
+    "tripEnds": "2021-08-08T14:11",
+    "destination": "Berlin, Germany",
+    "destinationCoords": "{}",
+    "createdAt": "2021-08-03T12:11:35.585Z",
+    "accommodation": "Berlin, Germany",
+    "accommodationCoords": "rf",
+    "transportation": "fdf",
+    "userLocations": "fg",
+    "trip": "gfdg",
+    "rawDataPlaces": "fg",
+    "durations": "fg",
+    "timeSlotsByDay": "dfg",
+    "tripDays": "dsg",
+    "email": "abc@yahoo.com"
+}
