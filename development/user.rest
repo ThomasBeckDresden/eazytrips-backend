@@ -1,0 +1,17 @@
+Get http://localhost:3000
+
+###
+POST http://localhost:3000/user/
+Content-Type: application/json
+
+{
+    "first_name": "Tommy",
+    "last_name": "Hilfiger",
+    "email": "tommyhilfiger4@yahoo.com",
+    "password": "tommytommy"
+}
+
+###
+
+Get http://localhost:3000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDdmNmE5MjZjODM1NTRjODUxZDc1YSIsImVtYWlsIjoidG9tbXloaWxmaWdlcjNAeWFob28uY29tIiwiaWF0IjoxNjI3OTEyMTQ3fQ.enhC_4x6sJLcaZewRMkWRa7fYeQzcAnhLNOoYcAClc0
