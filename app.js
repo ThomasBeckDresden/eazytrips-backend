@@ -9,6 +9,8 @@ const cors = require("cors");
 const indexRouter = require("./routes/index");
 const mockDataRouter = require("./routes/mock");
 const tripRouter = require("./routes/trip");
+const autocompleteRouter = require("./routes/autocomplete");
+
 const loadMockData = require("./utils/loadMockData");
 
 const app = express();
@@ -24,5 +26,6 @@ app.use(loadMockData);
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
+app.use("/autocomplete", autocompleteRouter);
 
 module.exports = app;
