@@ -4,11 +4,17 @@ const jwt = require('jsonwebtoken');
 const save_trip = async (req, res) => {
     console.log("save_trip called");
     const token = (req.headers.authorization)
-    console.log(token)
+
     const secretKey = process.env.JWT_SECRET;
-    const userInfo = jwt.verify(token, secretKey);
+    let userInfo
+    try {
+        userInfo = jwt.verify(token, secretKey);
+    } catch (err) {
+        res.status(500).send(err.message);
+    }
+    //userInfo = jwt.verify(token, secretKey);
     const email = userInfo.email;
-    console.log(userInfo);
+
     const {
         tripId,
         tripName,
@@ -48,6 +54,8 @@ const save_trip = async (req, res) => {
             tripDays,
             email,
         });
+
+        console.log(newtrip);
         await newtrip.save()
         res.json(newtrip);
     } catch (e) {
