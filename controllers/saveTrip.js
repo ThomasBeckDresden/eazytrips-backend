@@ -3,6 +3,12 @@ const Trip = require("../models/SaveTripSchema");
 
 const save_trip = async (req, res) => {
     console.log("save_trip called");
+    const token = (req.headers.authorization)
+    console.log(token)
+    const secretKey = process.env.JWT_SECRET;
+    const userInfo = jwt.verify(token, secretKey);
+    const email = userInfo.email;
+    console.log(userInfo);
     const {
         tripId,
         tripName,
@@ -20,7 +26,7 @@ const save_trip = async (req, res) => {
         durations,
         timeSlotsByDay,
         tripDays,
-        email, } = req.body;
+    } = req.body;
     try {
         let newtrip
         newtrip = new Trip({
