@@ -19,6 +19,7 @@ const tripSchema = new Schema({
     durations: [{ type: Object }],
     timeSlotsByDay: [{ type: Object }],
     tripDays: [{ type: Object }],
+    isStored: { type: String },
     email: { type: String, required: true }
 
 
