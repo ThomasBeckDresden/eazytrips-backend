@@ -1,5 +1,5 @@
 const Trip = require("../models/SaveTripSchema");
-
+const jwt = require('jsonwebtoken');
 
 const save_trip = async (req, res) => {
     console.log("save_trip called");
