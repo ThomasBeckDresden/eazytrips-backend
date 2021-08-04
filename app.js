@@ -15,6 +15,7 @@ const autocompleteRouter = require("./routes/autocomplete");
 
 const userRouter = require("./routes/user");
 const saveTripRouter = require("./routes/saveTrip");
+const getAllTripsRouter = require("./routes/saveTrip");
 
 const loadMockData = require("./utils/loadMockData");
 const authenticationRouter = require("./routes/authentication");
@@ -31,6 +32,7 @@ app.use(loadMockData);
 app.use(cors({ "exposedHeaders": "x-authorization-token" }));
 
 app.use('/save_trip', saveTripRouter);
+app.use('/get_all_trips', getAllTripsRouter);
 app.use("/", indexRouter);
 app.use("/mock", mockDataRouter);
 app.use("/gettrip", tripRouter);
