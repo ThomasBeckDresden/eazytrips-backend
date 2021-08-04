@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const tripSchema = new Schema({
-    tripId: { type: String, min: 2, max: 100, required: true },
+    tripId: { type: String, min: 2, max: 100, required: true, unique: true },
     tripName: { type: String, min: 2, max: 50 },
     tripStarts: { type: String, min: 2, max: 50 },
     tripEnds: { type: String, min: 2, max: 50 },
