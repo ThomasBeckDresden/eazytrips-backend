@@ -3153,4 +3153,4 @@ Content-Type: application/json
 
 ###
 
- http://localhost:3000/get_all_trips/
+GET http://localhost:3000/get_all_trips/

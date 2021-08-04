@@ -13,9 +13,9 @@ const tripRouter = require("./routes/trip");
 const autocompleteRouter = require("./routes/autocomplete");
 
 
-const userRouter = require("./routes/user");
-const saveTripRouter = require("./routes/saveTrip");
-const getAllTripsRouter = require("./routes/saveTrip");
+const userRouter = require("./routes/userRoute");
+const saveTripRouter = require("./routes/saveTripRoute");
+const getAllTripsRouter = require("./routes/saveTripRoute");
 
 const loadMockData = require("./utils/loadMockData");
 const authenticationRouter = require("./routes/authentication");

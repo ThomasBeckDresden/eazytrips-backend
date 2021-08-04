@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Trip = require("../models/SaveTripSchema");
-const { save_trip, get_all_trips } = require("../controllers/saveTrip");
+const { save_trip, get_all_trips } = require("../controllers/saveTripController");
 
 
 
