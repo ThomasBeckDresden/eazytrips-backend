@@ -39,8 +39,8 @@ const get_all_users = async (req, res) => {
     const userInfo = jwt.verify(token, secretKey);
     console.log(userInfo);
     try {
-        const trips = await Trip.find({ "email": "a@a.de" });
-        //const trips = await Trip.find({ "email": userInfo.email });
+        //const trips = await Trip.find({ "email": "a@a.de" });
+        const trips = await Trip.find({ "email": userInfo.email });
         console.log(trips)
         res.json(trips);
     } catch (e) {
