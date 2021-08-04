@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const User = require("../models/UserSchema");
 const Trip = require("../models/SaveTripSchema");
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
