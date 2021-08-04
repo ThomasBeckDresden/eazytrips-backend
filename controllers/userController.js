@@ -1,5 +1,7 @@
 const User = require("../models/User");
+const Trip = require("../models/SaveTripSchema");
 const bcrypt = require("bcrypt");
+const jwt = require('jsonwebtoken');
 
 
 const create_user = async (req, res) => {
@@ -30,10 +32,17 @@ const create_user = async (req, res) => {
 }
 
 const get_all_users = async (req, res) => {
-    console.log(req.headers);
+    console.log(req.headers.authorization);
+    const token = (req.headers.authorization)
+    console.log(token)
+    const secretKey = process.env.JWT_SECRET;
+    const userInfo = jwt.verify(token, secretKey);
+    console.log(userInfo);
     try {
-        const user = await User.find();
-        res.json(user);
+        const trips = await Trip.find({ "email": "a@a.de" });
+        //const trips = await Trip.find({ "email": userInfo.email });
+        console.log(trips)
+        res.json(trips);
     } catch (e) {
         res.status(500).send(e.message);
     }

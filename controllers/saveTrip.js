@@ -45,7 +45,7 @@ const save_trip = async (req, res) => {
         await newtrip.save()
         res.json(newtrip);
     } catch (e) {
-        res.status(500).send("s");
+        res.status(500).send(e.message);
     }
 };
 
@@ -56,6 +56,6 @@ const get_all_trips = async (req, res) => {
     } catch (e) {
         res.status(500).send(e.message);
     }
-}
+};
 
 module.exports = { save_trip, get_all_trips };
