@@ -31,6 +31,7 @@ const save_trip = async (req, res) => {
         rawDataPlaces,
         durations,
         timeSlotsByDay,
+        isStored,
         tripDays,
     } = req.body;
     try {
@@ -52,6 +53,7 @@ const save_trip = async (req, res) => {
             durations,
             timeSlotsByDay,
             tripDays,
+            isStored,
             email,
         });
 
