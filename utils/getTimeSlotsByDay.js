@@ -1,18 +1,22 @@
 const dayjs = require("dayjs");
 const isSameOrBefore = require("dayjs/plugin/isSameOrBefore");
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
+const utc = require("dayjs/plugin/utc");
 
 dayjs.extend(isSameOrBefore);
 dayjs.extend(isSameOrAfter);
+dayjs.extend(utc);
 
 const getTimeSlotsByDay = (tripDays, slotsTemplate) => {
   return tripDays.reduce((acc, curr, index) => {
     const slots = slotsTemplate.map((slot) => {
       // convert each slot template time to actual datetime of current trip date in order to use date mnethods
-      let slotStartsDate = dayjs(curr.date)
+      let slotStartsDate = dayjs
+        .utc(curr.date)
         .hour(slot.startsHour)
         .minute(slot.startsMin);
-      let slotEndsDate = dayjs(curr.date)
+      let slotEndsDate = dayjs
+        .utc(curr.date)
         .hour(slot.endsHour)
         .minute(slot.endsMin);
 
@@ -59,10 +63,13 @@ const getTimeSlotsByDay = (tripDays, slotsTemplate) => {
       }
     });
 
+    // remove undefined slots
+    const slotsFiltered = slots.filter((slot) => slot !== undefined);
+
     const dayWithSlots = {
       dayIndex: index,
       date: curr.date,
-      slots: slots,
+      slots: slotsFiltered,
     };
 
     return [...acc, dayWithSlots];

@@ -1,6 +1,6 @@
 const provideTripDataRaw = (req, res, next) => {
   const { tripDataRaw } = req;
-  res.send(tripDataRaw);
+  res.json(tripDataRaw);
 };
 
 const provideTripDataFinal = (req, res, next) => {
@@ -10,6 +10,7 @@ const provideTripDataFinal = (req, res, next) => {
     tripStarts,
     tripEnds,
     destination,
+    destinationCoords,
     createdAt,
     accommodation,
     accommodationCoords,
@@ -18,7 +19,7 @@ const provideTripDataFinal = (req, res, next) => {
     userLocations,
   } = req.body;
 
-  const { durations, timeSlots, trip } = req;
+  const { durations, timeSlots, trip, timeSlotsByDay, tripDays } = req;
 
   const tripData = {
     tripId,
@@ -26,6 +27,7 @@ const provideTripDataFinal = (req, res, next) => {
     tripStarts,
     tripEnds,
     destination,
+    destinationCoords,
     createdAt,
     accommodation,
     accommodationCoords,
@@ -34,9 +36,21 @@ const provideTripDataFinal = (req, res, next) => {
     trip,
     rawDataPlaces,
     durations,
-    timeSlots,
+    timeSlotsByDay,
+    tripDays,
   };
-  res.send(tripData);
+
+  // KEEP IN FINAL VERSION
+  const tripDataNoAccomm = tripData.trip.map((day) => {
+    const locationNoAccomm = day.locations.filter(
+      (location) => location.place_id !== "accommodation"
+    );
+    return { ...day, locations: locationNoAccomm };
+  });
+
+  res.json({ ...tripData, trip: tripDataNoAccomm });
+
+  // res.json(tripData);
 };
 
 module.exports = { provideTripDataFinal, provideTripDataRaw };

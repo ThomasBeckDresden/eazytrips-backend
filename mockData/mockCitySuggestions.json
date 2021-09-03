@@ -1,0 +1,177 @@
+{
+  "predictions": [
+    {
+      "description": "Lisboa, Portugal",
+      "matched_substrings": [
+        {
+          "length": 4,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJO_PkYRozGQ0R0DaQ5L3rAAQ",
+      "reference": "ChIJO_PkYRozGQ0R0DaQ5L3rAAQ",
+      "structured_formatting": {
+        "main_text": "Lisboa",
+        "main_text_matched_substrings": [
+          {
+            "length": 4,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Portugal"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Lisboa"
+        },
+        {
+          "offset": 8,
+          "value": "Portugal"
+        }
+      ],
+      "types": ["locality", "political", "geocode"]
+    },
+    {
+      "description": "Lisburn, UK",
+      "matched_substrings": [
+        {
+          "length": 4,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJHcei1If9YEgROxjzlI2rl8I",
+      "reference": "ChIJHcei1If9YEgROxjzlI2rl8I",
+      "structured_formatting": {
+        "main_text": "Lisburn",
+        "main_text_matched_substrings": [
+          {
+            "length": 4,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "UK"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Lisburn"
+        },
+        {
+          "offset": 9,
+          "value": "UK"
+        }
+      ],
+      "types": ["locality", "political", "geocode"]
+    },
+    {
+      "description": "Lisbon, OH, USA",
+      "matched_substrings": [
+        {
+          "length": 4,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJmblDvuICNIgRGiNj3M7-ZRY",
+      "reference": "ChIJmblDvuICNIgRGiNj3M7-ZRY",
+      "structured_formatting": {
+        "main_text": "Lisbon",
+        "main_text_matched_substrings": [
+          {
+            "length": 4,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "OH, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Lisbon"
+        },
+        {
+          "offset": 8,
+          "value": "OH"
+        },
+        {
+          "offset": 12,
+          "value": "USA"
+        }
+      ],
+      "types": ["locality", "political", "geocode"]
+    },
+    {
+      "description": "Lisbon, ND, USA",
+      "matched_substrings": [
+        {
+          "length": 4,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJz7QpE3xQzlIRnm7bXQc5oVQ",
+      "reference": "ChIJz7QpE3xQzlIRnm7bXQc5oVQ",
+      "structured_formatting": {
+        "main_text": "Lisbon",
+        "main_text_matched_substrings": [
+          {
+            "length": 4,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "ND, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Lisbon"
+        },
+        {
+          "offset": 8,
+          "value": "ND"
+        },
+        {
+          "offset": 12,
+          "value": "USA"
+        }
+      ],
+      "types": ["locality", "political", "geocode"]
+    },
+    {
+      "description": "Lisbon, IA, USA",
+      "matched_substrings": [
+        {
+          "length": 4,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJ6YALc2p95IcRv53YVav87MQ",
+      "reference": "ChIJ6YALc2p95IcRv53YVav87MQ",
+      "structured_formatting": {
+        "main_text": "Lisbon",
+        "main_text_matched_substrings": [
+          {
+            "length": 4,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "IA, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Lisbon"
+        },
+        {
+          "offset": 8,
+          "value": "IA"
+        },
+        {
+          "offset": 12,
+          "value": "USA"
+        }
+      ],
+      "types": ["locality", "political", "geocode"]
+    }
+  ],
+  "status": "OK"
+}

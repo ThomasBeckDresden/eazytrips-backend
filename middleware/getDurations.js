@@ -5,7 +5,7 @@ const duratinsNamed = require("../mockData/durationsNamed.json");
 
 const getDurations = async (req, res, next) => {
   // provided by frontend
-  const { rawDataPlaces, accommodationCoords } = req.body;
+  const { rawDataPlaces, accommodationCoords, transportation } = req.body;
   const apiOpenRoutes = process.env.API_KEY_OPENROUTES;
 
   // build final list for duration matrix containing id and coords of candidate locations
@@ -34,7 +34,19 @@ const getDurations = async (req, res, next) => {
       Authorization: apiOpenRoutes,
     };
     const endpoint = "https://api.openrouteservice.org/v2/matrix/";
-    const param = "foot-walking";
+
+    // set profile: driving, cycling, walking
+    let param;
+    if (transportation.walking) {
+      param = "foot-walking";
+    } else if (transportation.public) {
+      param = "driving-car";
+    } else if (transportation.cycling) {
+      param = "cycling-regular";
+    } else {
+      param = "foot-walking";
+      req.body.transportation = { walking: true };
+    }
 
     const { data: durationsRaw } = await axios.post(
       `${endpoint}${param}`,
